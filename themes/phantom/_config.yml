@@ -1,0 +1,47 @@
+# Header
+menu:
+  Home: /
+  Archives: /archives
+  About: /about
+  Tags: /tags
+
+# Logo Image Source
+logo_src: /images/logo.svg
+
+# Theme Main Subtitle
+subtitle_main: 前端开发，DJI爱好者，入坑Mavic，工作在上海
+
+# Theme Secondary subtitle
+susbtitle_secondary: 打杂、等退休
+
+# Footer About Section
+about_footer: 工作在<a href="https://www.liulishuo.com/" target="_blank">流利说</a>，前端打杂，了解请至 <a href="/about" target="_blank">关于我</a>
+
+# Default post title
+default_post_title: Untitled
+
+# Default post cover index page (Recommended)
+default_cover_index: "http://placehold.it/450x450"
+
+# Default post cover index page (Optional)
+default_cover_detail:
+
+# Show Dates for posts and pages
+show_dates: true
+
+# Comments. Choose one by filling up the information
+comments:
+  # Disqus comments
+  # Facebook comments
+  gitment:
+    appid: c6bfc7626e3016e5fecc
+    secret: 3e9b0b7e9f461e02267a16a0c5cd6f484b9e59df
+
+# Google Analytics Tracking ID
+google_analytics: UA-90536291-1
+
+# Social Accounts
+instagram_url: https://www.instagram.com/koya.site/
+github_url: https://github.com/virgoone
+email_url: mailto:me@virgo.one
+rss_url: https://blog.marryto.me/atom.xml
