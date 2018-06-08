@@ -24,6 +24,16 @@
 				img {
 					max-width: 100%;
 				}
+				p {
+					word-wrap: break-word;
+				}
+				blockquote {
+					p {
+						&:last-child {
+							margin-bottom: 0;
+						}
+					}
+				}
 
 				.tags {
 					margin: 50px 0;
