@@ -6,7 +6,7 @@ tags:
   - 前端
   - Virtual DOM
   - 转载
-permalink: 深入研究Virtual-DOM
+permalink: go-into-virtual-dom
 categories:
   - 2017
   - Virtual DOM
@@ -15,7 +15,6 @@ keywords:
   - preact,Virtual DOM,测试,前端开发,React.js,vue.js,node.js,编程,程序员,开发者,Hacker News,ECMAScript,开源,Github
 cover_detail: https://i.loli.net/2018/06/08/5b1a7ecd5b4e1.jpg
 cover_index: https://i.loli.net/2018/06/08/5b1a7ecd5b4e1.jpg
-
 ---
 对Virtual DOM这个名词并不陌生，但是有什么深入的理解谈不上。看到medium上rajaraodv写的The Inner Workings Of Virtual DOM这篇文章，比较深入的介绍了Virtual DOM的各个方面，在此翻译一下。
 

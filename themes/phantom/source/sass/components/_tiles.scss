@@ -32,10 +32,17 @@
 				width: 100%;
 				border-radius: _size(border-radius);
 				overflow: hidden;
+				padding-top: 90%;
 
 				img {
-					display: block;
-					width: 100%;
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%, -50%);
+					min-width: 100%;
+					min-height: 100%;
+					max-width: 150% !important;
+					max-height: 150% !important;
 				}
 
 				&:before {
@@ -107,6 +114,7 @@
 
 				h2 {
 					margin: 0;
+					text-transform: none;
 				}
 
 				.content {
