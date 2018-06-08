@@ -1,4 +1,3 @@
-# virgo.github.io ![build-info](https://travis-ci.org/virgoone/koya-blog.svg)
-
+# virgo.github.io [![Build Status](https://travis-ci.com/virgoone/koya-blog.svg?branch=master)](https://travis-ci.com/virgoone/koya-blog)
 ## Copyright and License
 [The MIT license](LICENSE.md).
