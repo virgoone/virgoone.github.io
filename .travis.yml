@@ -35,6 +35,6 @@ after_script:
 env:
  global:
    # Github Pages
-   - GH_REF: https://github.com/virgoone/virgoone.github.io.git
+   - GH_REF: github.com/virgoone/virgoone.github.io.git
    # Coding Pages
-   - CO_REF: https://git.coding.net/koyasite/koyasite.git
+   - CO_REF: git.coding.net/koyasite/koyasite.git
