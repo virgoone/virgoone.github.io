@@ -27,6 +27,7 @@
 					$body.removeClass('is-loading');
 				}, 100);
 			});
+			$("img.lazy").lazyload();
 
 		// Touch?
 			if (skel.vars.touch)

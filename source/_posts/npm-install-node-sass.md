@@ -5,6 +5,9 @@ tags:
   - npm
   - node
   - node-sass
+cover_detail: https://i.loli.net/2018/06/08/5b1a7ecd3722e.jpg
+cover_index: https://i.loli.net/2018/06/08/5b1a7ecd3722e.jpg
+
 ---
 
 最近安装 node-sass 的时候总是会各种不成功

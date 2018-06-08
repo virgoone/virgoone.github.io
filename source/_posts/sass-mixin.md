@@ -7,6 +7,9 @@ tags:
 categories:
   - 2017
   - 前端  
+cover_detail: https://i.loli.net/2018/06/08/5b1a7ecd3722e.jpg
+cover_index: https://i.loli.net/2018/06/08/5b1a7ecd3722e.jpg
+
 ---
 sass 常用mixin
 

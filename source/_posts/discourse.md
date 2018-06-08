@@ -9,7 +9,8 @@ tags:
   - 论坛
   - vpls
   - nginx
-
+cover_detail: https://i.loli.net/2018/06/08/5b1a7ecc2215b.jpg
+cover_index: https://i.loli.net/2018/06/08/5b1a7ecc2215b.jpg
 ---
 第一次打开[atom-china](https://atom-china.org)的时候觉得很惊奇，界面很新，效果挺好，所以就在欢迎邮件里面直接问站长atom-china是用什么模版做的，然后就了解到了[Discourse](https://www.discourse.org/) =>
 Discourse是由Stack Overflow 的联合创始人 Jeff Atwood推出的免费开源论坛项目，基于Ruby on Rails 和 Ember.js 开发，数据库使用 PostgreSQL 和 Redis。

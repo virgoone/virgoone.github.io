@@ -9,6 +9,9 @@ tags:
   - GFW
   - 国防网
   - 谷歌
+cover_detail: https://i.loli.net/2018/06/08/5b1a7ecd3722e.jpg
+cover_index: https://i.loli.net/2018/06/08/5b1a7ecd3722e.jpg
+
 ---
 
 技术的进步来源于对未知的探索，想成为一个伟大的老司机离不了国外牛逼的技术社区，而GFW的强大众所周知，怎么样跨过GFW来科学上网是每个程序员的必备技能

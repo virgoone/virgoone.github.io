@@ -11,6 +11,8 @@ categories:
 permalink: hexo-webp-support
 keywords:
   - Hexo,webp,延迟加载,性能优化,lzyload,jquery,移动Web,谷歌,图片格式,图片加载
+cover_detail: https://i.loli.net/2018/06/08/5b1a7ecc399f3.jpg
+cover_index: https://i.loli.net/2018/06/08/5b1a7ecc399f3.jpg
 ---
 前两天再写上边博客时因为使用了大量图片，所以决定采用谷歌的webp格式图片，webp格式相对jpg来说，同等质量下体积更小
 
@@ -62,7 +64,7 @@ lazyLoadPostsImages: function () {
   $imgArr.each(function(i){
     var src = $(this).data('src');
     var fsrc = $that._getwebpsrc('',src);
-    $(this).attr('data-src',fsrc);
+    $(this).attr('data-original',fsrc);
   }).lazyload({
     placeholder: '/images/loading.gif',
     effect: 'fadeIn',

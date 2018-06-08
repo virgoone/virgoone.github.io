@@ -7,6 +7,9 @@ tags:
   - regex
   - 正则表达式
   - 常用
+cover_detail: https://i.loli.net/2018/06/08/5b1a7ecd32dba.jpg
+cover_index: https://i.loli.net/2018/06/08/5b1a7ecd32dba.jpg
+
 ---
 ## 在前端开发中经常用到的正则表达式
 #### 1.校验密码强度
