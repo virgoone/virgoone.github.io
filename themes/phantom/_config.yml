@@ -9,10 +9,10 @@ menu:
 logo_src: /images/logo.svg
 
 # Theme Main Subtitle
-subtitle_main: 前端开发，DJI爱好者，入坑Mavic，工作在上海
+subtitle_main: DJI爱好者，入坑Mavic，工作在上海
 
 # Theme Secondary subtitle
-susbtitle_secondary: 打杂、等退休
+susbtitle_secondary: <a href="https://www.liulishuo.com/" target="_blank">流利说</a> 前端打杂专员，正在等退休，93年，处女座♍️
 
 # Footer About Section
 about_footer: 工作在<a href="https://www.liulishuo.com/" target="_blank">流利说</a>，前端打杂，了解请至 <a href="/about" target="_blank">关于我</a>
@@ -41,6 +41,11 @@ comments:
 
 # Google Analytics Tracking ID
 google_analytics: UA-90536291-1
+
+leancloud_visitors:
+  enable: true
+  app_id: VDJQPQkWcae55MrsKrmNSw5j-gzGzoHsz
+  app_key: n2xrQtPGJXzsR9rRdkB2nlPy
 
 # Social Accounts
 instagram_url: https://www.instagram.com/koya.site/

@@ -8,9 +8,8 @@ tags:
   - gitlab
 cover_detail: https://i.loli.net/2018/06/08/5b1a9b31f1937.jpg
 cover_index: https://i.loli.net/2018/06/08/5b1a9b31f1937.jpg
-sub_title: 如何搭建自己的Git服务器
+subtitle: 如何搭建自己的Git服务器
 permalink: build-own-git-server
-layout: draft
 ---
 
 好久没有写过博客了，续费域名时突然想起来有个博客已经很久未更新了
@@ -143,8 +142,6 @@ server {
     listen       80;
     server_name  git.marryto.me;
     charset utf-8;
-    access_log  /var/log/nginx/gitlab.access.log;
-    error_log  /var/log/nginx/gitlab.error.log;
     rewrite ^ https://git.marryto.me;
 }
 
@@ -182,6 +179,5 @@ server {
 ## 资料：
 [https://blog.gitea.io/2016/12/welcome-to-gitea/](https://blog.gitea.io/2016/12/welcome-to-gitea/)
 [https://blog.wolfogre.com/posts/gogs-vs-gitea/](https://blog.wolfogre.com/posts/gogs-vs-gitea/)
-[https://gitea.io/zh-CN/](https://gitea.io/zh-CN/)
 [https://docs.gitea.io/en-us/comparison/](https://docs.gitea.io/en-us/comparison/)
 
