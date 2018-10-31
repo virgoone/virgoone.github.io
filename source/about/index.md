@@ -6,7 +6,6 @@ comments: flase
 
 ```json
 {
-    "Name": "shuaibing",
     "Email": "me@virgo.one",
     "Location":"ShangHai",
     "skills": ["HTML5", "CSS3", "JavaScript", "LESS", "SASS", "React", "Redux", "Preact"],
@@ -15,7 +14,6 @@ comments: flase
             "Github": "https://github.com/virgoone",
             "Twitter": "https://twitter.com/virgo9197",
             "Weibo": "http://weibo.com/209192012",
-            "Wechat": "shuai100007",
             "Zhihu": "https://www.zhihu.com/people/virgoone",
         }
     ]
@@ -27,8 +25,6 @@ comments: flase
 
 ### 个人信息
 
-- 郭帅兵/男/1993
-- 洛阳师范学院
 - 工作年限：4年
 - 博客：https://blog.marryto.me
 - Github：https://github.com/virgoone
@@ -151,11 +147,6 @@ PC：[http://sdkcdn.videojj.com/liveos-sdk/test.html](http://sdkcdn.videojj.com/
 
 
 ---
-### 教育经历
-
-洛阳师范学院
- - 计算机应用技术专业（2013-2015）
-
 ### 技能清单
 
 以下均为我熟练使用的技能
@@ -173,5 +164,3 @@ PC：[http://sdkcdn.videojj.com/liveos-sdk/test.html](http://sdkcdn.videojj.com/
 ##### 联系
 [Email](mailto:me@virgo.one)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Github](//github.com/virgoone)
 [Weibo](//weibo.com/209192012)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  [Zhihu](//www.zhihu.com/people/virgoone)
-Wechat
-<img src="https://ooo.0o0.ooo/2017/04/14/58f090ee6c832.png" style="display:inline"/>
