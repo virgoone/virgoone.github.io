@@ -6,7 +6,7 @@ comments: flase
 
 ```json
 {
-    "Name": "Koya",
+    "Name": "shuaibing",
     "Email": "me@virgo.one",
     "Location":"ShangHai",
     "skills": ["HTML5", "CSS3", "JavaScript", "LESS", "SASS", "React", "Redux", "Preact"],
@@ -22,15 +22,14 @@ comments: flase
 }
 ```
 #### 关于我
-目前工作在上海，南外滩附近，工作在Video++，主要在做视频互动平台，有兴趣的可以移步公司官网查看=>[http://videojj.com](http://videojj.com)
-我在公司主要负责前端方面的开发
+目前工作在上海，杨浦区，工作在流利说，主要在做懂你英语业务组相关前端工作=>[https://www.liulishuo.com](https://www.liulishuo.com)
 
 
 ### 个人信息
 
 - 郭帅兵/男/1993
 - 洛阳师范学院
-- 工作年限：3年
+- 工作年限：4年
 - 博客：https://blog.marryto.me
 - Github：https://github.com/virgoone
 ---
@@ -38,7 +37,13 @@ comments: flase
 
 ### 工作经历
 
-#### Video++ （ 2015年1月 ~ 至今 ）
+#### 英语流利说 （ 2017年9月 ~ 至今 ）
+
+##### 成人英语业务
+
+目前在公司主要在成人英语业务组负责前端开发工作
+
+#### Video++ （ 2015年1月 ~ 2017年8月 ）
 
 ##### 直播项目
 
