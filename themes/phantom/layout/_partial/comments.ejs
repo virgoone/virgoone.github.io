@@ -41,3 +41,21 @@
     gitment.render('gitment-root')
     </script>
 <% } %>
+<% if(page.comments && theme.comments && theme.comments.valine && theme.comments.valine.enable) { %>
+    <hr />
+    <div id="vcomments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine@latest/dist/Valine.min.js'></script>
+    <script>
+    new Valine({
+        el: '#vcomments' ,
+        appId: '<%= theme.comments.valine.appid %>',
+        appKey: '<%= theme.comments.valine.secret %>',
+        notify:false, 
+        verify:false,
+        visitor: '<%= theme.comments.valine.visitor %>',
+        avatar:'SS', 
+        placeholder: '评论点什么吧~' 
+    });
+    </script>
+<% } %>

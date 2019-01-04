@@ -33,19 +33,15 @@ show_dates: true
 comments:
   # Disqus comments
   # Facebook comments
-  gitment:
-    owner: virgoone
-    repo: virgoone.github.io
-    appid: c6bfc7626e3016e5fecc
-    secret: 3e9b0b7e9f461e02267a16a0c5cd6f484b9e59df
+  valine:
+    enable: true
+    visitor: true
+    appid: VDJQPQkWcae55MrsKrmNSw5j-gzGzoHsz
+    secret: n2xrQtPGJXzsR9rRdkB2nlPy
 
 # Google Analytics Tracking ID
 google_analytics: UA-90536291-1
 
-leancloud_visitors:
-  enable: true
-  app_id: VDJQPQkWcae55MrsKrmNSw5j-gzGzoHsz
-  app_key: n2xrQtPGJXzsR9rRdkB2nlPy
 
 # Social Accounts
 instagram_url: https://www.instagram.com/koya.site/

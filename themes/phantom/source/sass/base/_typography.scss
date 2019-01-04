@@ -110,6 +110,13 @@
 
 	div.meta {
 		margin-bottom: 3em;
+		display: flex;
+		width: 100%;
+		& > div {
+			&:not(:last-child) {
+				margin-right: 0.5em;
+			}
+		}
 	}
 
 	@include breakpoint(medium) {

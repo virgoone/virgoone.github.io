@@ -13,3 +13,9 @@
 			@include padding(3em, 0, (-3em, 0, 3em, 0));
 		}
 	}
+	@media (prefers-color-scheme: dark) {
+		#main {
+			color: #ddd;
+			background-color: #222;
+		}
+	}
