@@ -5,8 +5,8 @@ tags:
   - npm
   - node
   - node-sass
-cover_detail: https://i.loli.net/2018/06/08/5b1a7ecd3722e.jpg
-cover_index: https://i.loli.net/2018/06/08/5b1a7ecd3722e.jpg
+cover_detail: https://cdn.ugc.marryto.me/blog/5b1a7ecd3722e.jpg
+cover_index: https://cdn.ugc.marryto.me/blog/5b1a7ecd3722e.jpg
 permalink: node-install-node-sass
 
 ---

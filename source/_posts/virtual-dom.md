@@ -13,15 +13,15 @@ categories:
   - preact
 keywords:
   - preact,Virtual DOM,测试,前端开发,React.js,vue.js,node.js,编程,程序员,开发者,Hacker News,ECMAScript,开源,Github
-cover_detail: https://i.loli.net/2018/06/08/5b1a7ecd5b4e1.jpg
-cover_index: https://i.loli.net/2018/06/08/5b1a7ecd5b4e1.jpg
+cover_detail: https://cdn.ugc.marryto.me/blog/5b1a7ecd5b4e1.jpg
+cover_index: https://cdn.ugc.marryto.me/blog/5b1a7ecd5b4e1.jpg
 ---
 对Virtual DOM这个名词并不陌生，但是有什么深入的理解谈不上。看到medium上rajaraodv写的The Inner Workings Of Virtual DOM这篇文章，比较深入的介绍了Virtual DOM的各个方面，在此翻译一下。
 
 这篇文章比较简单，在翻译的过程中都不需要google翻译，但是图片比较多。
 
 
-<img class="lazy" data-original='https://ooo.0o0.ooo/2017/06/23/594cf0889a10c.png' title='Virtual DOM' alt='Virtual DOM'/>
+<img class="lazy" data-original='https://cdn.ugc.marryto.me/blog/vdom/594cf0889a10c.png' title='Virtual DOM' alt='Virtual DOM'/>
 
 
 Virtual DOM (VDOM 也叫 VNode) 很魔幻 ✨，但是也很复杂以至于让人难以理解😱。像React，Preact这些js的库都用到了Virtual DOM。不幸的是，我没有找到任何一篇深入浅出的解释VDOM文章或者文档，所以我决定自己写一篇。
@@ -46,13 +46,13 @@ Virtual DOM (VDOM 也叫 VNode) 很魔幻 ✨，但是也很复杂以至于让�
 这个App是一个简单的可过滤搜索器。包含“FilteredList”和“List”两个组件。List组件渲染了一个列表（默认值是“California”和“New York”）。App还有一个搜索框，通过在搜索框里输入文字来过滤列表。
 
 
-<img class="lazy" data-original='https://ooo.0o0.ooo/2017/06/23/594cf135a4356.png' title='Virtual DOM' alt='Virtual DOM'/>
+<img class="lazy" data-original='https://cdn.ugc.marryto.me/blog/vdom/594cf135a4356.png' title='Virtual DOM' alt='Virtual DOM'/>
 
 
 首先，我们用JSX来写组件，然后用Babel的CLI工具转成纯JS。然后用Preact的“h” (hyperscript)函数转成VDOM树。最终Preact的Virtual DOM算法把VDOM转换成真正的DOM，这样就生成了我们的App。
 
 
-<img class="lazy" data-original='https://ooo.0o0.ooo/2017/06/23/594cf1f258bf1.png' title='Virtual DOM' alt='Virtual DOM'/>
+<img class="lazy" data-original='https://cdn.ugc.marryto.me/blog/vdom/594cf1f258bf1.png' title='Virtual DOM' alt='Virtual DOM'/>
 
 
 在了解VDOM的生命周期之前，先来了解一下JSX.
@@ -64,12 +64,12 @@ Virtual DOM (VDOM 也叫 VNode) 很魔幻 ✨，但是也很复杂以至于让�
 对我们的App来说，html像下面这样
 
 
-<img class="lazy" data-original='https://ooo.0o0.ooo/2017/06/23/594cf232debf4.png' title='Preact' alt='Preact'/>
+<img class="lazy" data-original='https://cdn.ugc.marryto.me/blog/vdom/594cf232debf4.png' title='Preact' alt='Preact'/>
 
 
 
 
-<img class="lazy" data-original='https://ooo.0o0.ooo/2017/06/23/594cf2608ddc7.png' title='Preact' alt='Preact'/>
+<img class="lazy" data-original='https://cdn.ugc.marryto.me/blog/vdom/594cf2608ddc7.png' title='Preact' alt='Preact'/>
 
 
 
@@ -106,7 +106,7 @@ jsx很酷，但是不是有效的JS，浏览器不支持。我们需要的是真
 怎么样把jsx转换成h函数呢，这就是Babel干的事情。Babel遍历每一个JSX节点，把他们转换成h函数的调用
 
 
-<img class="lazy" data-original='https://ooo.0o0.ooo/2017/06/23/594cf340e99c3.png' title='hyperscript' alt='hyperscript'/>
+<img class="lazy" data-original='https://cdn.ugc.marryto.me/blog/vdom/594cf340e99c3.png' title='hyperscript' alt='hyperscript'/>
 
 
 ### Babel JSX (React Vs Preact)
@@ -177,7 +177,7 @@ buildComponentFromVNode：[https://github.com/developit/preact/blob/master/src/v
 我们会一步一步的来分析每一个过程，所以不要觉得太复杂。
 
 
-<img class="lazy" data-original='https://ooo.0o0.ooo/2017/06/23/594cf4884c05a.png' title='Preact的虚拟DOM算法流程图' alt='Preact的虚拟DOM算法流程图'/>
+<img class="lazy" data-original='https://cdn.ugc.marryto.me/blog/vdom/594cf4884c05a.png' title='Preact的虚拟DOM算法流程图' alt='Preact的虚拟DOM算法流程图'/>
 
 
 要马上理解确实很困难，让我们根据不同的场景来一步步看：
@@ -191,13 +191,13 @@ buildComponentFromVNode：[https://github.com/developit/preact/blob/master/src/v
 这张图展示了为给定组件创建VNode树的初始循环，在这个循环里没有创建子组件（创建子组件的过程略有不同）
 
 
-<img class="lazy" data-original='https://ooo.0o0.ooo/2017/06/23/594cf506d7ce7.png' title='为指定的组件创建VNode' alt='为指定的组件创建VNode'/>
+<img class="lazy" data-original='https://cdn.ugc.marryto.me/blog/vdom/594cf506d7ce7.png' title='为指定的组件创建VNode' alt='为指定的组件创建VNode'/>
 
 
 下面这张图展示了当我们的App第一次运行的时候发生了什么，Preact最终为FilteredList组件创建了一个包含子组件和自身属性的VNode
 
 
-<img class="lazy" data-original='https://ooo.0o0.ooo/2017/06/23/594cf52f0a55c.png' title='App第一次运行的时候发生了什么' alt='App第一次运行的时候发生了什么'/>
+<img class="lazy" data-original='https://cdn.ugc.marryto.me/blog/vdom/594cf52f0a55c.png' title='App第一次运行的时候发生了什么' alt='App第一次运行的时候发生了什么'/>
 
 
 目前为止，我们有了一个VNode，其中div是它的父节点，input和List是它的子节点
@@ -210,13 +210,13 @@ buildComponentFromVNode：[https://github.com/developit/preact/blob/master/src/v
 这一步主要是创建父节点div，循环创建子节点
 
 
-<img class="lazy" data-original='https://ooo.0o0.ooo/2017/06/23/594cf58ac47e4.png' title='创建父节点div' alt='创建父节点div'/>
+<img class="lazy" data-original='https://cdn.ugc.marryto.me/blog/vdom/594cf58ac47e4.png' title='创建父节点div' alt='创建父节点div'/>
 
 
 div显示如下
 
 
-<img class="lazy" data-original='https://ooo.0o0.ooo/2017/06/23/594cf5a621d8a.png' title='div显示' alt='div显示'/>
+<img class="lazy" data-original='https://cdn.ugc.marryto.me/blog/vdom/594cf5a621d8a.png' title='div显示' alt='div显示'/>
 
 
 相关代码：
@@ -227,7 +227,7 @@ document.createElement: [https://github.com/developit/preact/blob/master/src/dom
 这一步，要循环创建所有节点，对我们的App来说，就是input和List
 
 
-<img class="lazy" data-original='https://ooo.0o0.ooo/2017/06/23/594cf5f5e9447.png' title='重复创建子节点' alt='重复创建子节点'/>
+<img class="lazy" data-original='https://cdn.ugc.marryto.me/blog/vdom/594cf5f5e9447.png' title='重复创建子节点' alt='重复创建子节点'/>
 
 
 #### 把子节点添加到父节点

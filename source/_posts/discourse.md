@@ -9,8 +9,8 @@ tags:
   - 论坛
   - vpls
   - nginx
-cover_detail: https://i.loli.net/2018/06/08/5b1a7ecc2215b.jpg
-cover_index: https://i.loli.net/2018/06/08/5b1a7ecc2215b.jpg
+cover_detail: https://cdn.ugc.marryto.me/blog/5b1a7ecc2215b.jpg
+cover_index: https://cdn.ugc.marryto.me/blog/5b1a7ecc2215b.jpg
 permalink: atom-discourse
 
 ---
@@ -70,9 +70,10 @@ rake admin:create
 ```
 然后输入你初始化时输入的[Email address for admin account]Email,确认密码，赋予admin权限就好，打开网页host，输入用户名和密码登录
 最后在settings里面设置notification email与初始化时[SMTP user name? ]一致，然后在邮件测试页面测试：
-![邮件测试](http://7xukcb.com1.z0.glb.clouddn.com/email.png)
+
 测试成功！！
 测试成功！！
+
 ## nginx与discourse
 到此为止，流程基本跑通，但是因为站点使用的二级域名，为了不影响其他域名的访问，所以通过nginx做了一个转向代理:
 ### discourse配置修改：
@@ -117,20 +118,18 @@ server {
 ```
 sudo service nginx reload
 ```
-最后通过域名访问[http://vpls.virgo.one](http://vpls.virgo.one),
+最后通过域名访问
+
 成功！！
 成功！！
 
 
 ## 添加Github第三方登录
-打开[Github application](https://github.com/settings/applications/)，进入Developer applications，新建应用程序，如下：
-![Github application](http://7xukcb.com1.z0.glb.clouddn.com/github.png)
+打开[Github application](https://github.com/settings/applications/)，进入Developer applications，新建应用程序
+
 Homepage url为你的discourse地址，authorization callback url为你的discourse地址加上/auth/github/callback，然后复制Client ID和Client Secret，
 最后打开discourse，进入管理－设置－登录，找到下图所示三个字段，勾选填入刚才复制的内容
-![Github application](http://7xukcb.com1.z0.glb.clouddn.com/2016-05-26%20at%2015.21.png)
+
 然后确定、完成。
-效果如下：
-![Github application](http://7xukcb.com1.z0.glb.clouddn.com/2016-05-26%20at%2015.24.png)
-点击使用Github登录
-![Github application](http://7xukcb.com1.z0.glb.clouddn.com/2016-05-26%20at%2015.25.png)
+
 点击=>完成！

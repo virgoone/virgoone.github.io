@@ -13,8 +13,8 @@ categories:
 permalink: vuejs-eyepetizer
 keywords:
   - vuejs,前端学习,开眼,eyepetizer,开眼视频,前端开发,React.js,vue.js,node.js,编程,程序员,开发者,Hacker News,ECMAScript,开源,Github
-cover_detail: https://i.loli.net/2018/06/08/5b1a7ecd88810.jpg
-cover_index: https://i.loli.net/2018/06/08/5b1a7ecd88810.jpg
+cover_detail: https://cdn.ugc.marryto.me/blog/poster/5b1a7ecd88810.jpg
+cover_index: https://cdn.ugc.marryto.me/blog/poster/5b1a7ecd88810.jpg
 ---
 最近一直在学习vuejs，手痒之余决定使用vuejs做一些东西
 
@@ -172,7 +172,7 @@ computed:{
 ```
 
 最终效果：
-![Douni.one](http://7xukcb.com1.z0.glb.clouddn.com/2017-02-28%20at%2019.11.png)
+![Douni.one](https://cdn.ugc.marryto.me/blog/x7t0ay6xbb.png)
 
 ## 部署项目
 执行命令

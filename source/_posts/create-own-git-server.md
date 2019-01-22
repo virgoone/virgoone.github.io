@@ -6,8 +6,8 @@ tags:
   - gitea
   - git服务器搭建
   - gitlab
-cover_detail: https://i.loli.net/2018/06/08/5b1a9b31f1937.jpg
-cover_index: https://i.loli.net/2018/06/08/5b1a9b31f1937.jpg
+cover_detail: https://cdn.ugc.marryto.me/blog/poster/qtxbmx321qp.jpg
+cover_index: https://cdn.ugc.marryto.me/blog/poster/qtxbmx321qp.jpg
 subtitle: 如何搭建自己的Git服务器
 permalink: build-own-git-server
 ---
@@ -172,7 +172,7 @@ server {
 
 当我们第一次访问Gitea服务器时，会进入 [https://git.marryto.me/install](https://git.marryto.me/install) 设置服务器信息，包含数据库，可选有Postgres、Mysql和SqlLite等，设置完成后我们就可以进入到自己的Git服务器了，如下：
 
-<img class="lazy" data-original='https://i.loli.net/2018/06/09/5b1aaef9975bb.png' title='git.marryto.me' alt='git.marryto.me'/>
+<img class="lazy" data-original='https://cdn.ugc.marryto.me/blog/5b1aaef9975bb.png' title='git.marryto.me' alt='git.marryto.me'/>
 
 好了，我们的安装就到这里，以下是关联的资料
 

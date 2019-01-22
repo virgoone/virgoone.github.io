@@ -5,17 +5,34 @@
 ///
 
 /* Main */
+.body {
+	background-image: linear-gradient(to right top, #B4423C 50%, #eee 50%);
+	background-size: 100% calc(100% - 100vh + 5px);
+	background-repeat: no-repeat;
 
+	&::after {
+		content: "";
+		position: fixed;
+		top: 5px;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background: #fff;
+		z-index: -1;
+	}
+}
+
+#main {
+	@include padding(5em, 0, (-5em, 0, 3em, 0));
+
+	@include breakpoint(small) {
+		@include padding(3em, 0, (-3em, 0, 3em, 0));
+	}
+}
+
+@media (prefers-color-scheme: dark) {
 	#main {
-		@include padding(5em, 0, (-5em, 0, 3em, 0));
-
-		@include breakpoint(small) {
-			@include padding(3em, 0, (-3em, 0, 3em, 0));
-		}
+		color: #ddd;
+		background-color: #222;
 	}
-	@media (prefers-color-scheme: dark) {
-		#main {
-			color: #ddd;
-			background-color: #222;
-		}
-	}
+}
