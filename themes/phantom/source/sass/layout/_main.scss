@@ -31,8 +31,12 @@
 }
 
 @media (prefers-color-scheme: dark) {
-	#main {
+	#wrapper {
 		color: #ddd;
-		background-color: #222;
+		background-color: #323639;
+	}
+
+	#footer {
+		background-color: #222 !important;
 	}
 }
