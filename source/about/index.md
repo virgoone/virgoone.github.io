@@ -19,7 +19,7 @@ comments: flase
     ]
 }
 ```
-#### 关于我
+### 关于我
 目前工作在上海，杨浦区，工作在流利说，主要在做懂你英语业务组相关前端工作=>[https://www.liulishuo.com](https://www.liulishuo.com)
 
 
@@ -35,9 +35,24 @@ comments: flase
 
 #### 英语流利说 （ 2017年9月 ~ 至今 ）
 
-##### 成人英语业务
-
 目前在公司主要在成人英语业务组负责前端开发工作
+
+##### 流利阅读业务组（2019.5-至今）
+
+主要负责阅读业务的商业化部分，平常工作主要是商业化验证、A/B测试、小程序等，搭建了线上服务监控dashboard和线上服务的异常报警
+
+主要职责：
+* 商业化部分
+* 小程序开发
+
+##### 懂你英语业务组（2017.09-2019.5）
+
+主要负责业务分配管理工作，和平常的业务开发，包含版本需求（和客户端配合）、小班课、商业化部分（A/B测试等）开发工作，其他涉及业务上的监控报警、线上问题定位处理、业务性能优化等
+
+主要职责
+* 负责版本需求开发
+* 负责商业化部分开发
+* 负责小班课C端业务开发
 
 #### Video++ （ 2015年1月 ~ 2017年8月 ）
 
@@ -153,10 +168,10 @@ PC：[http://sdkcdn.videojj.com/liveos-sdk/test.html](http://sdkcdn.videojj.com/
 
 - Web开发：Java/Node
 - Web框架：Koa/express
-- 前端框架：Bootstrap/AngularJS/ReactJS/HTML5/Antd
-- 前端工具：Bower/Gulp/SaSS/LeSS/CssModules
+- 前端框架：ReactJS/HTML5/Antd
+- 前端工具：Webpack/Gulp/SaSS/LeSS/CssModules
 - 数据库相关：MySQL/Mongodb
-- 版本管理工具：Svn/Git
+- 版本管理工具：git
 - 系统：Ubuntu/Mac
 
 ---
