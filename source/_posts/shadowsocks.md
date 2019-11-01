@@ -9,8 +9,8 @@ tags:
   - GFW
   - 国防网
   - 谷歌
-cover_detail: https://cdn.ugc.marryto.me/blog/5b1a7ecd3722e.jpg
-cover_index: https://cdn.ugc.marryto.me/blog/5b1a7ecd3722e.jpg
+cover_detail: https://m-staticcdn.annatarhe.com//blog/5b1a7ecd3722e.jpg
+cover_index: https://m-staticcdn.annatarhe.com//blog/5b1a7ecd3722e.jpg
 
 ---
 
@@ -25,7 +25,7 @@ so经过这么多翻墙工具的坑之后隆重推荐一个翻墙的神器-->sha
 
 自己选择VPS服务器的推荐选择比较靠谱的云主机提供商，不然经常宕机也是个不小的坑，推荐
 [https://www.linode.com/](https://www.linode.com/)，价钱来说属于比较便宜的：
-![linode](https://cdn.ugc.marryto.me/blog/mnp7p7u2g2k.png)，对VPS云主机来说选择1GB得足够使用了。
+![linode](https://m-staticcdn.annatarhe.com//blog/mnp7p7u2g2k.png)，对VPS云主机来说选择1GB得足够使用了。
 也可以选择AWS，绑定信用卡的话AWS会送一年云主机的使用权，属于比较划算的类型。
 AWS地址：[https://aws.amazon.com/cn/](https://aws.amazon.com/cn/)
 

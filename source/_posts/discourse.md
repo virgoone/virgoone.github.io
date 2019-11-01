@@ -9,8 +9,8 @@ tags:
   - 论坛
   - vpls
   - nginx
-cover_detail: https://cdn.ugc.marryto.me/blog/5b1a7ecc2215b.jpg
-cover_index: https://cdn.ugc.marryto.me/blog/5b1a7ecc2215b.jpg
+cover_detail: https://m-staticcdn.annatarhe.com//blog/5b1a7ecc2215b.jpg
+cover_index: https://m-staticcdn.annatarhe.com//blog/5b1a7ecc2215b.jpg
 permalink: atom-discourse
 
 ---

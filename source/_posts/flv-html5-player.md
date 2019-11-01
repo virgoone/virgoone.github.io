@@ -13,8 +13,8 @@ categories:
 permalink: flvjs-html5-video
 keywords:
   - flvjs,plyr,视频播放器,flv播放器,flv,mse,ECMAScript,开源,Github
-cover_detail: https://cdn.ugc.marryto.me/blog/5b1a7ecd5b4e1.jpg
-cover_index: https://cdn.ugc.marryto.me/blog/5b1a7ecd5b4e1.jpg
+cover_detail: https://m-staticcdn.annatarhe.com//blog/5b1a7ecd5b4e1.jpg
+cover_index: https://m-staticcdn.annatarhe.com//blog/5b1a7ecd5b4e1.jpg
 
 ---
 

@@ -13,8 +13,8 @@ categories:
 permalink: dji-mavic-pro-1
 keywords:
   - Instagram,航拍视频,mavic pro,无人机,御姐,数码,大疆无人机,精灵,Github,DJI,大疆创新,Phantom,4轴飞行器,航拍
-cover_detail: https://cdn.ugc.marryto.me/blog/5b1a7ecd3722e.jpg
-cover_index: https://cdn.ugc.marryto.me/blog/5b1a7ecd3722e.jpg
+cover_detail: https://m-staticcdn.annatarhe.com//blog/5b1a7ecd3722e.jpg
+cover_index: https://m-staticcdn.annatarhe.com//blog/5b1a7ecd3722e.jpg
 
 ---
 ## #前言
