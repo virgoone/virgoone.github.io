@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="referrer" content="origin"> 
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Description-->
+    
+        <meta name="description" content="前端开发，DJI爱好者，入坑Mavic，工作在上海">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Koya">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="sass-mixin"/>
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Koya&#39;s Blog"/>
+
+    <!--Page Cover-->
+    
+        <meta property="og:image" content=""/>
+    
+
+    <!-- Title -->
+    
+    <title>sass-mixin - Koya&#39;s Blog</title>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/sass/main.css">
+
+
+    <!--[if lt IE 8]>
+        
+<script src="/js/ie/html5shiv.js"></script>
+
+    <![endif]-->
+
+    <!--[if lt IE 8]>
+        
+<link rel="stylesheet" href="/sass/ie8.css">
+
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+        
+<link rel="stylesheet" href="/sass/ie9.css">
+
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="https://cdn.bootcss.com/featherlight/1.4.0/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-90536291-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+
+
+    <!-- la Analytics -->
+    
+    <script>
+        !function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"JHRJXYlwhd65yctP",ck:"JHRJXYlwhd65yctP"});
+    </script>
+
+
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Koya's Blog" type="application/atom+xml">
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <!-- Menu -->
+        <!-- Header -->
+<header id="header">
+    <div class="inner">
+
+        <!-- Logo -->
+        <a href="/" class="logo">
+            <span class="symbol"><img src="/images/logo.svg" alt="" /></span><span class="title">Koya's Blog</span>
+        </a>
+
+        <!-- Nav -->
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+    <h2>Menu</h2>
+    <ul>
+        
+            <li>
+                <a href="/">Home</a>
+            </li>
+        
+            <li>
+                <a href="/archives">Archives</a>
+            </li>
+        
+            <li>
+                <a href="/about">About</a>
+            </li>
+        
+            <li>
+                <a href="/tags">Tags</a>
+            </li>
+        
+    </ul>
+</nav>
+
+
+        <div id="main">
+            <div class="inner">
+
+                <!-- Main Content -->
+                
+
+    <h1 class="title">sass-mixin</h1>
+    <div class="meta">
+        <div class="date">2017-01-23</div>
+        
+        <div class="post-meta-divider">|</div>
+        <div id="/sass-mixin/" class="leancloud-visitors" data-flag-title="sass-mixin">
+            <em class="post-meta-item-text">阅读量: </em>
+            <i class="leancloud-visitors-count"></i>
+        </div>
+        
+    </div>
+
+
+
+    <span class="image main"><img src="https://m-staticcdn.annatarhe.com//blog/5b1a7ecd3722e.jpg" alt="" /></span>
+
+
+<hr />
+
+<!-- Gallery -->
+
+
+<!-- Content -->
+<p>sass 常用mixin</p>
+<p>sass mixins，require <code>Sass ~&gt; 3.3.0</code></p>
+<p><strong>utility</strong></p>
+<ul>
+<li><a href="#prefix"><code>prefix</code></a></li>
+<li><a href="#clearfix"><code>clearfix</code></a></li>
+<li><a href="#float"><code>float</code></a></li>
+<li><a href="#text-overflow"><code>text-overflow</code></a></li>
+<li><a href="#animation"><code>animation</code></a></li>
+<li><a href="#placeholder"><code>placeholder</code></a></li>
+<li><a href="#rem"><code>rem</code></a></li>
+<li><a href="#opacity"><code>opacity</code></a></li>
+<li><a href="#arrow"><code>arrow</code></a></li>
+<li><a href="#triangle"><code>triangle</code></a></li>
+<li><a href="#center"><code>center</code></a></li>
+<li><a href="#media"><code>media</code></a></li>
+<li><a href="#box-sizing"><code>box-sizing</code></a></li>
+<li><a href="#touch-scroll"><code>touch-scroll</code></a></li>
+<li><a href="#font"><code>font</code></a></li>
+<li><a href="#onepx"><code>onepx</code></a></li>
+<li><a href="#balloon"><code>balloon</code></a></li>
+<li><a href="#side-line"><code>side-line</code></a></li>
+</ul>
+<p><strong>functions</strong></p>
+<p><em>string</em></p>
+<ul>
+<li><a href="#str-split"><code>str-split</code></a></li>
+<li><a href="#str-repeat"><code>str-repeat</code></a></li>
+<li><a href="#str-replace"><code>str-replace</code></a></li>
+</ul>
+<p><em>list</em></p>
+<ul>
+<li><a href="#first"><code>first</code></a></li>
+<li><a href="#last"><code>last</code></a></li>
+<li><a href="#prepend"><code>prepend</code></a></li>
+<li><a href="#insert-nth"><code>insert-nth</code></a></li>
+<li><a href="#replace"><code>replace</code></a></li>
+<li><a href="#replace-nth"><code>replace-nth</code></a></li>
+<li><a href="#remove"><code>remove</code></a></li>
+<li><a href="#remove-nth"><code>remove-nth</code></a></li>
+<li><a href="#slice"><code>slice</code></a></li>
+<li><a href="#to-string"><code>to-string</code></a></li>
+<li><a href="#shift"><code>shift</code></a></li>
+<li><a href="#contain"><code>contain</code></a></li>
+</ul>
+<h2 id="usage"><a href="#usage" class="headerlink" title="usage"></a>usage</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i mixins-sass --save</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@import</span> <span class="string">&quot;./node_modules/mixins-sass/src/mixins&quot;</span>;</span><br></pre></td></tr></table></figure>
+
+<h2 id="utility"><a href="#utility" class="headerlink" title="utility"></a>utility</h2><h3 id="prefix"><a href="#prefix" class="headerlink" title="prefix"></a><code>prefix</code></h3><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @param $map       css列表</span></span><br><span class="line"><span class="comment"> * @param $vendors   浏览器前缀，默认：webkit moz ms o</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">@mixin</span> prefix(<span class="variable">$map</span>, <span class="variable">$vendors</span>: webkit moz ms o)</span><br><span class="line"></span><br><span class="line">.test &#123;</span><br><span class="line">    <span class="keyword">@include</span> prefix((<span class="attribute">transliton</span>: all <span class="number">0.5s</span> ease-out), webkit);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="clearfix"><a href="#clearfix" class="headerlink" title="clearfix"></a>clearfix</h3><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@include</span> clearfix;</span><br></pre></td></tr></table></figure>
+
+<h3 id="float"><a href="#float" class="headerlink" title="float"></a>float</h3><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@include</span> float(left);</span><br></pre></td></tr></table></figure>
+
+<h3 id="text-overflow"><a href="#text-overflow" class="headerlink" title="text-overflow"></a>text-overflow</h3><p>文字超出显示省略号，支持多行</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @param $line       超出显示省略号的行数，默认：1</span></span><br><span class="line"><span class="comment"> * @param $substract  为预留区域百分比%，默认：0</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">@mixin</span> text-overflow(<span class="variable">$line</span>: <span class="number">1</span>, <span class="variable">$substract</span>: <span class="number">0</span>);</span><br></pre></td></tr></table></figure>
+
+<h3 id="animation"><a href="#animation" class="headerlink" title="animation"></a>animation</h3><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@include</span> animation(slideUp <span class="number">900ms</span> ease both) &#123;</span><br><span class="line">    0% &#123;</span><br><span class="line">        <span class="attribute">transform</span>: translate3d(<span class="number">0</span>, -<span class="number">200px</span>, <span class="number">0</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    100% &#123;</span><br><span class="line">        <span class="attribute">transform</span>: translate3d(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="placeholder"><a href="#placeholder" class="headerlink" title="placeholder"></a>placeholder</h3><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// scss</span></span><br><span class="line"><span class="keyword">@include</span> placeholder() &#123;</span><br><span class="line">	...</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// css</span></span><br><span class="line">::-webkit-input-placeholder &#123;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br><span class="line">::-moz-placeholder &#123;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br><span class="line">:-ms-input-placeholder &#123;</span><br><span class="line">   ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="rem"><a href="#rem" class="headerlink" title="rem"></a>rem</h3><p>px转rem</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @param $property       css属性</span></span><br><span class="line"><span class="comment"> * @param $values         css属性值</span></span><br><span class="line"><span class="comment"> * @param $support-ie     是否对不支持rem的浏览器使用px</span></span><br><span class="line"><span class="comment"> * @param $base           基准字体大小，如果不传会搜索全局变量 $base-font，如果没有默认为 16px</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">@mixin</span> rem(<span class="variable">$property</span>, <span class="variable">$values</span>, <span class="variable">$support-ie</span>: true, <span class="variable">$base</span>: null)</span><br><span class="line"></span><br><span class="line"><span class="keyword">@include</span> rem(<span class="string">&#x27;padding&#x27;</span>, <span class="string">&#x27;10px 5px 5px 10px&#x27;</span>, true, <span class="string">&#x27;16px&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<h3 id="opacity"><a href="#opacity" class="headerlink" title="opacity"></a>opacity</h3><p>兼容ie的透明度</p>
+<h3 id="arrow"><a href="#arrow" class="headerlink" title="arrow"></a>arrow</h3><p>生成上下左右的小箭头：<a target="_blank" rel="noopener" href="http://lugolabs.com/caret">http://lugolabs.com/caret</a></p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @param $width</span></span><br><span class="line"><span class="comment"> * @param $border-width</span></span><br><span class="line"><span class="comment"> * @param $direction: top bottom left right</span></span><br><span class="line"><span class="comment"> * @param $background-color</span></span><br><span class="line"><span class="comment"> * @param $position 默认relative</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">@mixin</span> arrow(<span class="variable">$width</span>, <span class="variable">$border-width</span>, <span class="variable">$direction</span>, <span class="variable">$color</span>, <span class="variable">$background-color</span>, <span class="variable">$position</span>: relative)</span><br><span class="line"></span><br><span class="line"><span class="keyword">@include</span> arrow(<span class="number">10px</span>, <span class="number">1px</span>, <span class="string">&#x27;bottom&#x27;</span>, <span class="string">&#x27;#00f&#x27;</span>, <span class="string">&#x27;#fff&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<h3 id="triangle"><a href="#triangle" class="headerlink" title="triangle"></a>triangle</h3><p>三角形生成</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @param $width</span></span><br><span class="line"><span class="comment"> * @param $height</span></span><br><span class="line"><span class="comment"> * @param $color</span></span><br><span class="line"><span class="comment"> * @param $direction: top bottom left right</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">@mixin</span> triangle(<span class="variable">$width</span>, <span class="variable">$height</span>, <span class="variable">$color</span>: <span class="number">#000</span>, <span class="variable">$direction</span>: bottom)</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * svg背景图生成三角形</span><br><span class="line"> */</span><br><span class="line"><span class="keyword">@mixin</span> svg-triangle(<span class="variable">$width</span>, <span class="variable">$height</span>, <span class="variable">$color</span>: <span class="number">#000</span>, <span class="variable">$direction</span>: bottom)</span><br><span class="line"></span><br><span class="line"><span class="keyword">@include</span> triangle(<span class="number">10px</span>, <span class="number">5px</span>);</span><br></pre></td></tr></table></figure>
+
+<h3 id="center"><a href="#center" class="headerlink" title="center"></a>center</h3><p>居中</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @param $direction: horizontal vertical both,  default: both</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">@include</span> center;</span><br></pre></td></tr></table></figure>
+
+<h3 id="media"><a href="#media" class="headerlink" title="media"></a>media</h3><p>媒体查询相关</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @param $min   min-width</span></span><br><span class="line"><span class="comment"> * @param $max   max-width</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">@mixin</span> screen(<span class="variable">$min</span>, <span class="variable">$max</span>)</span><br><span class="line"><span class="keyword">@mixin</span> max-screen(<span class="variable">$width</span>)</span><br><span class="line"><span class="keyword">@mixin</span> min-screen(<span class="variable">$width</span>)</span><br><span class="line"><span class="keyword">@mixin</span> hidpi(<span class="variable">$ratio</span>: <span class="number">1.3</span>)</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * <span class="keyword">@param</span> <span class="variable">$filename</span></span><br><span class="line"> * <span class="keyword">@param</span> <span class="variable">$retina-filename</span>   多个或者一个</span><br><span class="line"> * <span class="keyword">@param</span> <span class="variable">$ratio</span>             多个或者一个</span><br><span class="line"> * <span class="keyword">@param</span> <span class="variable">$background-size</span></span><br><span class="line"> */</span><br><span class="line"><span class="keyword">@mixin</span> retina-image(<span class="variable">$filename</span>, <span class="variable">$retina-filename</span>, <span class="variable">$ratio</span>: <span class="number">1.3</span>, <span class="variable">$background-size</span>: <span class="number">100%</span>)</span><br><span class="line"><span class="keyword">@mixin</span> iphone6(<span class="variable">$orientation</span>: all)</span><br><span class="line"><span class="keyword">@mixin</span> iphone6plus(<span class="variable">$orientation</span>: all)</span><br><span class="line"><span class="keyword">@mixin</span> iphone5(<span class="variable">$orientation</span>: all)</span><br><span class="line"><span class="keyword">@mixin</span> iphone4(<span class="variable">$orientation</span>: all)</span><br><span class="line"><span class="keyword">@mixin</span> ipad(<span class="variable">$orientation</span>: all)</span><br><span class="line"><span class="keyword">@mixin</span> ipad-mini(<span class="variable">$orientation</span>: all)</span><br><span class="line"><span class="keyword">@mixin</span> ipad-retina(<span class="variable">$orientation</span>: all)</span><br><span class="line"></span><br><span class="line"><span class="keyword">@include</span> retina-image(test.png, test@<span class="number">2</span>.png test@<span class="number">3</span>.png, <span class="number">2</span> <span class="number">3</span>);</span><br></pre></td></tr></table></figure>
+
+<h3 id="box-sizing"><a href="#box-sizing" class="headerlink" title="box-sizing"></a>box-sizing</h3><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">html</span> &#123;</span><br><span class="line">    <span class="keyword">@include</span> box-sizing(border-box);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="touch-scroll"><a href="#touch-scroll" class="headerlink" title="touch-scroll"></a>touch-scroll</h3><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="keyword">@include</span> touch-scroll;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// css</span></span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    -webkit-<span class="attribute">overflow</span>-scrolling: touch;</span><br><span class="line">    <span class="attribute">overflow</span>-scrolling: touch;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="font"><a href="#font" class="headerlink" title="font"></a>font</h3><p>中文字体解决方案，来自<a target="_blank" rel="noopener" href="https://github.com/zenozeng/fonts.css">https://github.com/zenozeng/fonts.css</a>，有<code>font-hei</code>、<code>font-kai</code>、<code>font-song</code>、<code>font-fang-song</code>。</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="keyword">@include</span> font-hei;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="onepx"><a href="#onepx" class="headerlink" title="onepx"></a>onepx</h3><p>移动端<code>1像素</code>方案，通过<code>background-image</code>渐变色实现</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @param $color</span></span><br><span class="line"><span class="comment"> * @param $direction: top bottom left right vertical all,  default: all</span></span><br><span class="line"><span class="comment"> * @param $pseudo: after before, default: after</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="selector-class">.border-l</span> &#123;</span><br><span class="line">    <span class="keyword">@include</span> onepx(<span class="number">#eee</span>, left);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>onepx-scale</strong></p>
+<p>通过<code>transform</code>实现，支持圆角</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @param $color</span></span><br><span class="line"><span class="comment"> * @param $direction: top bottom left right vertical all radius,  default: all</span></span><br><span class="line"><span class="comment"> * @param $pseudo: after before, default: after</span></span><br><span class="line"><span class="comment"> * @param $radius default: 1px</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="selector-class">.border-r</span> &#123;</span><br><span class="line">    <span class="keyword">@include</span> onepx-scale(<span class="number">#eee</span>, radius, after, <span class="number">2px</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="balloon"><a href="#balloon" class="headerlink" title="balloon"></a>balloon</h3><p>气泡提示，来自：<a target="_blank" rel="noopener" href="http://kazzkiq.github.io/balloon.css/">balloon.css</a></p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @param $direction:            top bottom left right</span></span><br><span class="line"><span class="comment"> * @param $bg                    气泡提示背景颜色</span></span><br><span class="line"><span class="comment"> * @param $trangle-width         气泡小三角形宽度</span></span><br><span class="line"><span class="comment"> * @param $trangle-height        气泡小三角形高度</span></span><br><span class="line"><span class="comment"> * @param $color                 气泡文字颜色</span></span><br><span class="line"><span class="comment"> * @param $font                  气泡文字大小</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">@mixin</span> balloon(<span class="variable">$direction</span>, <span class="variable">$bg</span>, <span class="variable">$trangle-width</span>: <span class="number">18px</span>, <span class="variable">$trangle-height</span>: <span class="number">6px</span>, <span class="variable">$color</span>: <span class="number">#fff</span>, <span class="variable">$font</span>: <span class="number">12px</span>)</span><br><span class="line"></span><br><span class="line">.balloon &#123;</span><br><span class="line">    <span class="keyword">@include</span> balloon(top, <span class="number">#000</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;balloon&quot;</span> <span class="attr">data-balloon</span>=<span class="string">&quot;Whats up!&quot;</span>&gt;</span>Hover me!<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="side-line"><a href="#side-line" class="headerlink" title="side-line"></a>side-line</h3><p>线中间夹文字效果</p>
+<p><a target="_blank" rel="noopener" href="http://codepen.io/anon/pen/XjNEAR">http://codepen.io/anon/pen/XjNEAR</a></p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @param $height  线高  default: 1px</span></span><br><span class="line"><span class="comment"> * @param $space   线距离文字两边的距离 default: 0.5em</span></span><br><span class="line"><span class="comment"> * @param $color   线颜色 default: inherit</span></span><br><span class="line"><span class="comment"> * @param $style   border-style default: solid</span></span><br><span class="line"><span class="comment"> * @param $adjust  线距离底部的距离，默认垂直居中 default: false</span></span><br><span class="line"><span class="comment"> * @param $double  是否需要两条线</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">@mixin</span> side-line(<span class="variable">$height</span>: <span class="number">1px</span>, <span class="variable">$space</span>: <span class="number">0.5em</span>, <span class="variable">$color</span>: inherit, <span class="variable">$style</span>: solid, <span class="variable">$adjust</span>: false, <span class="variable">$double</span>: false)</span><br><span class="line"></span><br><span class="line">.side-line &#123;</span><br><span class="line">    <span class="keyword">@include</span> side-line;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="functions"><a href="#functions" class="headerlink" title="functions"></a>functions</h2><p><strong>string</strong></p>
+<h3 id="str-split"><a href="#str-split" class="headerlink" title="str-split"></a>str-split</h3><p>字符串分隔</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@function</span> str-split(<span class="variable">$string</span>, <span class="variable">$delimiter</span>: <span class="string">&quot; &quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="str-repeat"><a href="#str-repeat" class="headerlink" title="str-repeat"></a>str-repeat</h3><p>字符串重复</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@function</span> str-repeat(<span class="variable">$string</span>, <span class="variable">$times</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="str-replace"><a href="#str-replace" class="headerlink" title="str-replace"></a>str-replace</h3><p>字符串替换</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@function</span> str-replace(<span class="variable">$string</span>, <span class="variable">$search</span>, <span class="variable">$replace</span>: <span class="string">&quot;&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p><strong>list</strong></p>
+<h3 id="first"><a href="#first" class="headerlink" title="first"></a>first</h3><p>返回列表第一项</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@function</span> first(<span class="variable">$list</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="last"><a href="#last" class="headerlink" title="last"></a>last</h3><p>返回列表最后一项</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@function</span> last(<span class="variable">$list</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="prepend"><a href="#prepend" class="headerlink" title="prepend"></a>prepend</h3><p>向列表前面插入一个</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@function</span> prepend(<span class="variable">$list</span>, <span class="variable">$value</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="insert-nth"><a href="#insert-nth" class="headerlink" title="insert-nth"></a>insert-nth</h3><p>向列表某个位置插入</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@function</span> insert-nth(<span class="variable">$list</span>, <span class="variable">$index</span>, <span class="variable">$value</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="replace"><a href="#replace" class="headerlink" title="replace"></a>replace</h3><p>替换列表的某个元素 <code>$recursive</code> 是否全部替换</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@function</span> replace(<span class="variable">$list</span>, <span class="variable">$old-value</span>, <span class="variable">$new-value</span>, <span class="variable">$recursive</span>: false)</span><br></pre></td></tr></table></figure>
+
+<h3 id="replace-nth"><a href="#replace-nth" class="headerlink" title="replace-nth"></a>replace-nth</h3><p>替换列表某个位置的元素</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@function</span> replace-nth(<span class="variable">$list</span>, <span class="variable">$index</span>, <span class="variable">$value</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="remove"><a href="#remove" class="headerlink" title="remove"></a>remove</h3><p>删除列表某个元素 <code>$recursive</code> 是否删除所有</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@function</span> remove(<span class="variable">$list</span>, <span class="variable">$value</span>, <span class="variable">$recursive</span>: false)</span><br></pre></td></tr></table></figure>
+
+<h3 id="remove-nth"><a href="#remove-nth" class="headerlink" title="remove-nth"></a>remove-nth</h3><p>删除列表指定位置元素</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@function</span> remove-nth(<span class="variable">$list</span>, <span class="variable">$index</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="slice"><a href="#slice" class="headerlink" title="slice"></a>slice</h3><p>截取列表中的一部分</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@function</span> slice(<span class="variable">$list</span>, <span class="variable">$start</span>: <span class="number">1</span>, <span class="variable">$end</span>: length(<span class="variable">$list</span>))</span><br></pre></td></tr></table></figure>
+
+<h3 id="to-string"><a href="#to-string" class="headerlink" title="to-string"></a>to-string</h3><p>列表变成字符串，<code>$glue</code>为连接符，<code>$is-nested</code>是否是嵌套的列表</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@function</span> to-string(<span class="variable">$list</span>, <span class="variable">$glue</span>: <span class="string">&#x27;&#x27;</span>, <span class="variable">$is-nested</span>: false)</span><br></pre></td></tr></table></figure>
+
+<h3 id="shift"><a href="#shift" class="headerlink" title="shift"></a>shift</h3><p>将列表部分元素前置</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@function</span> shift(<span class="variable">$list</span>, <span class="variable">$index</span>: <span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="contain"><a href="#contain" class="headerlink" title="contain"></a>contain</h3><p>列表是存在某个值</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@function contain($list, $value)</span><br></pre></td></tr></table></figure>
+<p><a target="_blank" rel="noopener" href="https://github.com/huanz/mixins">【原文链接】</a></p>
+
+
+<!-- Tags -->
+
+
+
+<div class="tags">
+    <a href="/tags/sass/" class="button small">sass</a> <a href="/tags/mixin/" class="button small">mixin</a>
+</div>
+
+
+
+<!-- Comments -->
+<div>
+    
+
+
+
+
+
+    <hr />
+    <div id="vcomments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine@latest/dist/Valine.min.js'></script>
+    <script>
+    new Valine({
+        el: '#vcomments' ,
+        appId: 'VDJQPQkWcae55MrsKrmNSw5j-gzGzoHsz',
+        appKey: 'n2xrQtPGJXzsR9rRdkB2nlPy',
+        notify:false, 
+        verify:false,
+        visitor: 'true',
+        avatar:'SS', 
+        placeholder: '评论点什么吧~' 
+    });
+    </script>
+
+</div>
+
+
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+<footer id="footer">
+    <div class="inner">
+        <section>
+            <h2>About</h2>
+            <div>
+                工作在<a href="https://www.liulishuo.com/" target="_blank">流利说</a>，前端打杂，了解请至 <a href="/about" target="_blank">关于我</a>
+            </div>
+        </section>
+        <section>
+            <h2>Follow</h2>
+            <ul class="icons">
+                
+                
+                
+                    <li><a href="https://www.instagram.com/koya.site/" class="icon style2 fa-instagram" target="_blank" ><span class="label">Instagram</span></a></li>
+                
+                
+                
+                    <li><a href="https://github.com/virgoone" class="icon style2 fa-github" target="_blank" ><span class="label">GitHub</span></a></li>
+                
+                
+                
+                
+                
+                    <li><a href="mailto:me@virgo.one" class="icon style2 fa-envelope-o" target="_blank" ><span class="label">Email</span></a></li>
+                
+                
+                    <li><a href="https://blog.marryto.me/atom.xml" class="icon style2 fa-rss" target="_blank" ><span class="label">RSS</span></a></li>
+                
+            </ul>
+        </section>
+        <ul class="copyright">
+            <li>&copy; Untitled. All rights reserved</li>
+            <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+            <li>Hexo: <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></li>
+            <li>Hosted by <a href="http://t.douni.one/zeit" target="_blank">ZEIT</a></li>
+        </ul>
+    </div>
+</footer>
+    </div>
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<!-- skel -->
+<script src="https://cdn.bootcss.com/skel/3.0.0/skel.min.js" type="text/javascript" charset="utf-8"></script>
+<!-- Custom Code -->
+
+<script src="/js/util.js"></script>
+
+
+<!--[if lte IE 8]>
+
+<script src="/js/ie/respond.min.js"></script>
+
+<![endif]-->
+
+<!-- Custom Code -->
+
+<script src="/js/main.js"></script>
+
+
+<!-- Gallery -->
+<script src="https://cdn.bootcss.com/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+</body>
+
+</html>

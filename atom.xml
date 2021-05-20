@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Koya&#39;s Blog</title>
+  
+  <subtitle>人可生如蚁，而美如神</subtitle>
+  <link href="https://blog.marryto.me/atom.xml" rel="self"/>
+  
+  <link href="https://blog.marryto.me/"/>
+  <updated>2021-05-20T03:53:58.000Z</updated>
+  <id>https://blog.marryto.me/</id>
+  
+  <author>
+    <name>Koya</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用css给你的网站启用“暗黑模式”</title>
+    <link href="https://blog.marryto.me/css-dark-theme/"/>
+    <id>https://blog.marryto.me/css-dark-theme/</id>
+    <published>2019-07-03T17:32:53.000Z</published>
+    <updated>2021-05-20T03:53:58.000Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot; title=&quot;说明&quot;&gt;&lt;/a&gt;说明&lt;/h2&gt;&lt;p&gt;如果你在使用 macOS 10.14.4 或者之后的系统，并且在系统内开启了深色模式，打开这篇文章时，你就发现我的博客变成了暗黑版本，之前只</summary>
+      
+    
+    
+    
+    <category term="2017" scheme="https://blog.marryto.me/categories/2017/"/>
+    
+    <category term="数码" scheme="https://blog.marryto.me/categories/2017/%E6%95%B0%E7%A0%81/"/>
+    
+    
+    <category term="暗黑模式" scheme="https://blog.marryto.me/tags/%E6%9A%97%E9%BB%91%E6%A8%A1%E5%BC%8F/"/>
+    
+    <category term="css" scheme="https://blog.marryto.me/tags/css/"/>
+    
+    <category term="dark" scheme="https://blog.marryto.me/tags/dark/"/>
+    
+    <category term="theme" scheme="https://blog.marryto.me/tags/theme/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>解决移动端fixed输入框问题</title>
+    <link href="https://blog.marryto.me/mobile-input-fixed/"/>
+    <id>https://blog.marryto.me/mobile-input-fixed/</id>
+    <published>2018-10-31T18:45:47.000Z</published>
+    <updated>2021-05-20T03:53:58.000Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;最近做的一个需求加入了输入发送信息的功能，设计给到的设计稿上需要实现一版fixed输入框，众所周知，在PC上这样的需求很容易就可以实现，但是在手机上因为软键盘弹出的问题，不管是在iOS或者是在Android上，都会有各种严重问题，比如说：软键盘遮挡到输入框引起的显示问题等&lt;</summary>
+      
+    
+    
+    
+    
+    <category term="mobile" scheme="https://blog.marryto.me/tags/mobile/"/>
+    
+    <category term="input" scheme="https://blog.marryto.me/tags/input/"/>
+    
+    <category term="scroll" scheme="https://blog.marryto.me/tags/scroll/"/>
+    
+    <category term="bug fix" scheme="https://blog.marryto.me/tags/bug-fix/"/>
+    
+    <category term="移动端输入框" scheme="https://blog.marryto.me/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E8%BE%93%E5%85%A5%E6%A1%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基于Gitea+Drone搭建自己的CI/CD平台</title>
+    <link href="https://blog.marryto.me/drone-ci-build/"/>
+    <id>https://blog.marryto.me/drone-ci-build/</id>
+    <published>2018-06-09T21:48:52.000Z</published>
+    <updated>2021-05-20T03:53:58.000Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;上一篇我们搭建了自己的Git服务器 &lt;a href=&quot;/build-own-git-server&quot;&gt;搭建自己的Git服务器-Gitea安装教程&lt;/a&gt;， 搭建Git之后，想找一个能解放生产力的工具&lt;/p&gt;
+&lt;p&gt;这个时间突然看到了&lt;a href=&quot;https://dro</summary>
+      
+    
+    
+    
+    
+    <category term="gitea" scheme="https://blog.marryto.me/tags/gitea/"/>
+    
+    <category term="drone" scheme="https://blog.marryto.me/tags/drone/"/>
+    
+    <category term="ci" scheme="https://blog.marryto.me/tags/ci/"/>
+    
+    <category term="cd" scheme="https://blog.marryto.me/tags/cd/"/>
+    
+    <category term="Drone-CI" scheme="https://blog.marryto.me/tags/Drone-CI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搭建自己的Git服务器-Gitea安装教程</title>
+    <link href="https://blog.marryto.me/build-own-git-server/"/>
+    <id>https://blog.marryto.me/build-own-git-server/</id>
+    <published>2018-06-08T21:28:34.000Z</published>
+    <updated>2021-05-20T03:53:58.000Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;好久没有写过博客了，续费域名时突然想起来有个博客已经很久未更新了&lt;/p&gt;
+&lt;p&gt;突然觉得浪费了之前的一波配置😂，现在更新一波&lt;/p&gt;
+&lt;p&gt;顺便对博客的样式做了个更新放弃了hexo，可能是因为hexo太重了，找了一个比较轻量级的theme替代了hexo&lt;/p&gt;
+&lt;h2 </summary>
+      
+    
+    
+    
+    
+    <category term="git" scheme="https://blog.marryto.me/tags/git/"/>
+    
+    <category term="gitea" scheme="https://blog.marryto.me/tags/gitea/"/>
+    
+    <category term="git服务器搭建" scheme="https://blog.marryto.me/tags/git%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="gitlab" scheme="https://blog.marryto.me/tags/gitlab/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>深入研究Virtual DOM【转载】</title>
+    <link href="https://blog.marryto.me/virtual-dom/"/>
+    <id>https://blog.marryto.me/virtual-dom/</id>
+    <published>2017-05-23T18:33:07.000Z</published>
+    <updated>2021-05-20T03:53:58.000Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;对Virtual DOM这个名词并不陌生，但是有什么深入的理解谈不上。看到medium上rajaraodv写的The Inner Workings Of Virtual DOM这篇文章，比较深入的介绍了Virtual DOM的各个方面，在此翻译一下。&lt;/p&gt;
+&lt;p&gt;这篇文章</summary>
+      
+    
+    
+    
+    <category term="2017" scheme="https://blog.marryto.me/categories/2017/"/>
+    
+    <category term="Virtual DOM" scheme="https://blog.marryto.me/categories/2017/Virtual-DOM/"/>
+    
+    <category term="preact" scheme="https://blog.marryto.me/categories/2017/Virtual-DOM/preact/"/>
+    
+    
+    <category term="preact" scheme="https://blog.marryto.me/tags/preact/"/>
+    
+    <category term="前端" scheme="https://blog.marryto.me/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="Virtual DOM" scheme="https://blog.marryto.me/tags/Virtual-DOM/"/>
+    
+    <category term="转载" scheme="https://blog.marryto.me/tags/%E8%BD%AC%E8%BD%BD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在 Node.js 中为 Restful API 编写单元测试</title>
+    <link href="https://blog.marryto.me/write-unit-tests-for-restful-api-in-nodejs/"/>
+    <id>https://blog.marryto.me/write-unit-tests-for-restful-api-in-nodejs/</id>
+    <published>2017-05-10T13:48:54.000Z</published>
+    <updated>2021-05-20T03:53:58.000Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;单元测试是针对程序模块来进行正确性检验的测试工作&lt;br&gt;程序单元是应用的最小可测试部件。&lt;/p&gt;
+&lt;p&gt;在 Web 应用中，我们可以把 Re</summary>
+      
+    
+    
+    
+    <category term="2017" scheme="https://blog.marryto.me/categories/2017/"/>
+    
+    <category term="Nodejs" scheme="https://blog.marryto.me/categories/2017/Nodejs/"/>
+    
+    
+    <category term="Restful" scheme="https://blog.marryto.me/tags/Restful/"/>
+    
+    <category term="API单元测试" scheme="https://blog.marryto.me/tags/API%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/"/>
+    
+    <category term="Node.js" scheme="https://blog.marryto.me/tags/Node-js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用flvjs封装html5 video player</title>
+    <link href="https://blog.marryto.me/flv-html5-player/"/>
+    <id>https://blog.marryto.me/flv-html5-player/</id>
+    <published>2017-04-13T14:20:20.000Z</published>
+    <updated>2021-05-20T03:53:58.000Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;最近一直在公司里做视频分析系统相关的工作，碰到一个需求&lt;/p&gt;
+&lt;p&gt;因为系统中原来使用的播放器是我们公司包含互动层在内的一个比较庞大的播放器&lt;/p&gt;
+&lt;p&gt;而对于我们目前的系统来说并不需要，所以我就按照&lt;a href=&quot;https://github.com/Selz/pl</summary>
+      
+    
+    
+    
+    <category term="2017" scheme="https://blog.marryto.me/categories/2017/"/>
+    
+    <category term="前端" scheme="https://blog.marryto.me/categories/2017/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="播放器" scheme="https://blog.marryto.me/categories/2017/%E5%89%8D%E7%AB%AF/%E6%92%AD%E6%94%BE%E5%99%A8/"/>
+    
+    
+    <category term="video" scheme="https://blog.marryto.me/tags/video/"/>
+    
+    <category term="flvjs" scheme="https://blog.marryto.me/tags/flvjs/"/>
+    
+    <category term="html5" scheme="https://blog.marryto.me/tags/html5/"/>
+    
+    <category term="mse" scheme="https://blog.marryto.me/tags/mse/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>npm安装node-sass正确姿势</title>
+    <link href="https://blog.marryto.me/npm-install-node-sass/"/>
+    <id>https://blog.marryto.me/npm-install-node-sass/</id>
+    <published>2017-04-12T19:36:38.000Z</published>
+    <updated>2021-05-20T03:53:58.000Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;最近安装 node-sass 的时候总是会各种不成功&lt;/p&gt;
+&lt;p&gt;今天我琢磨了一会儿，查了一些资料总算知道怎么回事了&lt;/p&gt;
+&lt;p&gt;首先要知道的是，安装 node-sass 时在 node scripts/install 阶段会从 github.com 上下载一个 .no</summary>
+      
+    
+    
+    
+    
+    <category term="npm" scheme="https://blog.marryto.me/tags/npm/"/>
+    
+    <category term="node" scheme="https://blog.marryto.me/tags/node/"/>
+    
+    <category term="node-sass" scheme="https://blog.marryto.me/tags/node-sass/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>给hexo增加webp图片支持</title>
+    <link href="https://blog.marryto.me/hexo-webp-support/"/>
+    <id>https://blog.marryto.me/hexo-webp-support/</id>
+    <published>2017-03-08T19:44:06.000Z</published>
+    <updated>2021-05-20T03:53:58.000Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;前两天再写上边博客时因为使用了大量图片，所以决定采用谷歌的webp格式图片，webp格式相对jpg来说，同等质量下体积更小&lt;/p&gt;
+&lt;p&gt;但是webp格式相对来说浏览器支持度并不算高，尤其是在移动端全挂，所以我改写了一下hexo的懒加载代码，加入了webp图片格式支持判断&lt;</summary>
+      
+    
+    
+    
+    <category term="2017" scheme="https://blog.marryto.me/categories/2017/"/>
+    
+    <category term="hexo" scheme="https://blog.marryto.me/categories/2017/hexo/"/>
+    
+    
+    <category term="hexo" scheme="https://blog.marryto.me/tags/hexo/"/>
+    
+    <category term="webp" scheme="https://blog.marryto.me/tags/webp/"/>
+    
+    <category term="图片" scheme="https://blog.marryto.me/tags/%E5%9B%BE%E7%89%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>大疆DJI Mavic Pro 近期视频图片整理</title>
+    <link href="https://blog.marryto.me/mavic-01/"/>
+    <id>https://blog.marryto.me/mavic-01/</id>
+    <published>2017-03-02T18:41:35.000Z</published>
+    <updated>2021-05-20T03:53:58.000Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;#前言&quot;&gt;&lt;/a&gt;#前言&lt;/h2&gt;&lt;p&gt;三个月前入手了DJI的mavic pro可折叠无人机，先放上御姐玉照：&lt;/p&gt;
+&lt;img class=&quot;lazy&quot; data-origi</summary>
+      
+    
+    
+    
+    <category term="2017" scheme="https://blog.marryto.me/categories/2017/"/>
+    
+    <category term="数码" scheme="https://blog.marryto.me/categories/2017/%E6%95%B0%E7%A0%81/"/>
+    
+    
+    <category term="mavic" scheme="https://blog.marryto.me/tags/mavic/"/>
+    
+    <category term="无人机" scheme="https://blog.marryto.me/tags/%E6%97%A0%E4%BA%BA%E6%9C%BA/"/>
+    
+    <category term="御姐" scheme="https://blog.marryto.me/tags/%E5%BE%A1%E5%A7%90/"/>
+    
+    <category term="数码" scheme="https://blog.marryto.me/tags/%E6%95%B0%E7%A0%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用vue2.0开发的开眼h5实现</title>
+    <link href="https://blog.marryto.me/vuejs-01/"/>
+    <id>https://blog.marryto.me/vuejs-01/</id>
+    <published>2017-02-28T17:32:21.000Z</published>
+    <updated>2021-05-20T03:53:58.000Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;最近一直在学习vuejs，手痒之余决定使用vuejs做一些东西&lt;/p&gt;
+&lt;p&gt;正好一直觉得开眼APP的风格很惹人喜欢，所以决定用vuejs仿写一个简单的h5的开眼实现&lt;/p&gt;
+&lt;p&gt;项目演示：&lt;a href=&quot;http://douni.one/eyepetizer&quot;&gt;htt</summary>
+      
+    
+    
+    
+    <category term="2017" scheme="https://blog.marryto.me/categories/2017/"/>
+    
+    <category term="前端" scheme="https://blog.marryto.me/categories/2017/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="vuejs" scheme="https://blog.marryto.me/categories/2017/%E5%89%8D%E7%AB%AF/vuejs/"/>
+    
+    
+    <category term="前端" scheme="https://blog.marryto.me/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="2017" scheme="https://blog.marryto.me/tags/2017/"/>
+    
+    <category term="vuejs" scheme="https://blog.marryto.me/tags/vuejs/"/>
+    
+    <category term="eyepetizer" scheme="https://blog.marryto.me/tags/eyepetizer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>sass-mixin</title>
+    <link href="https://blog.marryto.me/sass-mixin/"/>
+    <id>https://blog.marryto.me/sass-mixin/</id>
+    <published>2017-01-23T17:01:27.000Z</published>
+    <updated>2021-05-20T03:53:58.000Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;sass 常用mixin&lt;/p&gt;
+&lt;p&gt;sass mixins，require &lt;code&gt;Sass ~&amp;gt; 3.3.0&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;utility&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#prefix&quot;&gt;&lt;cod</summary>
+      
+    
+    
+    
+    <category term="2017" scheme="https://blog.marryto.me/categories/2017/"/>
+    
+    <category term="前端" scheme="https://blog.marryto.me/categories/2017/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="sass" scheme="https://blog.marryto.me/tags/sass/"/>
+    
+    <category term="mixin" scheme="https://blog.marryto.me/tags/mixin/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>年终总结</title>
+    <link href="https://blog.marryto.me/year-end-summary/"/>
+    <id>https://blog.marryto.me/year-end-summary/</id>
+    <published>2017-01-21T18:14:08.000Z</published>
+    <updated>2021-05-20T03:53:58.000Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;今天是17年的1.21号，按农历算也已经到腊月二十四了&lt;/p&gt;
+&lt;p&gt;刚过完小年，对我来说，今天也是我在现在的公司&lt;a href=&quot;https://videojj.com/&quot;&gt;Video++&lt;/a&gt;的第二年的最后一天，以前呢也从来不会想到会在一个公司待这么长的时间&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="2017" scheme="https://blog.marryto.me/categories/2017/"/>
+    
+    <category term="总结" scheme="https://blog.marryto.me/categories/2017/%E6%80%BB%E7%BB%93/"/>
+    
+    
+    <category term="2017" scheme="https://blog.marryto.me/tags/2017/"/>
+    
+    <category term="总结" scheme="https://blog.marryto.me/tags/%E6%80%BB%E7%BB%93/"/>
+    
+    <category term="年终总结" scheme="https://blog.marryto.me/tags/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/"/>
+    
+    <category term="summary" scheme="https://blog.marryto.me/tags/summary/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>翻墙神器－shadowsocks</title>
+    <link href="https://blog.marryto.me/shadowsocks/"/>
+    <id>https://blog.marryto.me/shadowsocks/</id>
+    <published>2016-06-09T21:31:07.000Z</published>
+    <updated>2021-05-20T03:53:58.000Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;技术的进步来源于对未知的探索，想成为一个伟大的老司机离不了国外牛逼的技术社区，而GFW的强大众所周知，怎么样跨过GFW来科学上网是每个程序员的必备技能&lt;/p&gt;
+&lt;p&gt;so经过这么多翻墙工具的坑之后隆重推荐一个翻墙的神器–&amp;gt;shadowsocks，shadowsocks</summary>
+      
+    
+    
+    
+    
+    <category term="翻墙神器" scheme="https://blog.marryto.me/tags/%E7%BF%BB%E5%A2%99%E7%A5%9E%E5%99%A8/"/>
+    
+    <category term="ss" scheme="https://blog.marryto.me/tags/ss/"/>
+    
+    <category term="shadowsocks" scheme="https://blog.marryto.me/tags/shadowsocks/"/>
+    
+    <category term="aws" scheme="https://blog.marryto.me/tags/aws/"/>
+    
+    <category term="GFW" scheme="https://blog.marryto.me/tags/GFW/"/>
+    
+    <category term="国防网" scheme="https://blog.marryto.me/tags/%E5%9B%BD%E9%98%B2%E7%BD%91/"/>
+    
+    <category term="谷歌" scheme="https://blog.marryto.me/tags/%E8%B0%B7%E6%AD%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>安装discourse遇到的各种坑</title>
+    <link href="https://blog.marryto.me/discourse/"/>
+    <id>https://blog.marryto.me/discourse/</id>
+    <published>2016-05-25T16:09:21.000Z</published>
+    <updated>2021-05-20T03:53:58.000Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;第一次打开&lt;a href=&quot;https://atom-china.org/&quot;&gt;atom-china&lt;/a&gt;的时候觉得很惊奇，界面很新，效果挺好，所以就在欢迎邮件里面直接问站长atom-china是用什么模版做的，然后就了解到了&lt;a href=&quot;https://www.dis</summary>
+      
+    
+    
+    
+    <category term="discourse" scheme="https://blog.marryto.me/categories/discourse/"/>
+    
+    
+    <category term="discourse" scheme="https://blog.marryto.me/tags/discourse/"/>
+    
+    <category term="安装" scheme="https://blog.marryto.me/tags/%E5%AE%89%E8%A3%85/"/>
+    
+    <category term="论坛" scheme="https://blog.marryto.me/tags/%E8%AE%BA%E5%9D%9B/"/>
+    
+    <category term="vpls" scheme="https://blog.marryto.me/tags/vpls/"/>
+    
+    <category term="nginx" scheme="https://blog.marryto.me/tags/nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jade模版引擎学习</title>
+    <link href="https://blog.marryto.me/hello-jade/"/>
+    <id>https://blog.marryto.me/hello-jade/</id>
+    <published>2016-05-16T21:15:35.000Z</published>
+    <updated>2021-05-20T03:53:58.000Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;jade是一个高性能的模版引擎，Jade是Haml的Javascript实现，在服务端（NodeJS）及客户端均有支持。最新版本的jade更名为pug，对新版有兴趣的可以移步 =&amp;gt; &lt;a href=&quot;https://github.com/pugjs/pug&quot;&gt;Gith</summary>
+      
+    
+    
+    
+    <category term="jade" scheme="https://blog.marryto.me/categories/jade/"/>
+    
+    
+    <category term="jade" scheme="https://blog.marryto.me/tags/jade/"/>
+    
+    <category term="模版引擎" scheme="https://blog.marryto.me/tags/%E6%A8%A1%E7%89%88%E5%BC%95%E6%93%8E/"/>
+    
+    <category term="模版" scheme="https://blog.marryto.me/tags/%E6%A8%A1%E7%89%88/"/>
+    
+    <category term="学习" scheme="https://blog.marryto.me/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>前端经常用到的正则表达式</title>
+    <link href="https://blog.marryto.me/regex-temp/"/>
+    <id>https://blog.marryto.me/regex-temp/</id>
+    <published>2016-05-14T19:40:54.000Z</published>
+    <updated>2021-05-20T03:53:58.000Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;在前端开发中经常用到的正则表达式&quot;&gt;&lt;a href=&quot;#在前端开发中经常用到的正则表达式&quot; class=&quot;headerlink&quot; title=&quot;在前端开发中经常用到的正则表达式&quot;&gt;&lt;/a&gt;在前端开发中经常用到的正则表达式&lt;/h2&gt;&lt;h4 id=&quot;1-校验密码强度&quot;</summary>
+      
+    
+    
+    
+    <category term="正则表达式" scheme="https://blog.marryto.me/categories/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    
+    
+    <category term="regex" scheme="https://blog.marryto.me/tags/regex/"/>
+    
+    <category term="正则表达式" scheme="https://blog.marryto.me/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    
+    <category term="常用" scheme="https://blog.marryto.me/tags/%E5%B8%B8%E7%94%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>个人的一些想法</title>
+    <link href="https://blog.marryto.me/hello-hexo/"/>
+    <id>https://blog.marryto.me/hello-hexo/</id>
+    <published>2016-05-12T19:08:37.000Z</published>
+    <updated>2021-05-20T03:53:58.000Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;之前一直想做一个博客网站，但是一直忙着工作的事情，然后用lofter做了一个博客，平常更新了一些转载的文章，一直没尝试自己写过博客，所以决定在Github 上搭建一个自己的个人博客，选择了Hexo来搭建自己的技术博客，以后会在上面发表一些平常自己对技术的学习和体会，希望和大</summary>
+      
+    
+    
+    
+    <category term="Virgo" scheme="https://blog.marryto.me/categories/Virgo/"/>
+    
+    
+    <category term="Hexo" scheme="https://blog.marryto.me/tags/Hexo/"/>
+    
+    <category term="关于我" scheme="https://blog.marryto.me/tags/%E5%85%B3%E4%BA%8E%E6%88%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://blog.marryto.me/hello-world/"/>
+    <id>https://blog.marryto.me/hello-world/</id>
+    <published>2016-05-12T12:18:30.000Z</published>
+    <updated>2021-05-20T03:53:58.000Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    <category term="Virgo" scheme="https://blog.marryto.me/categories/Virgo/"/>
+    
+    
+    <category term="Hexo" scheme="https://blog.marryto.me/tags/Hexo/"/>
+    
+  </entry>
+  
+</feed>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="referrer" content="origin"> 
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Description-->
+    
+        <meta name="description" content="前端开发，DJI爱好者，入坑Mavic，工作在上海">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Koya">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="解决移动端fixed输入框问题"/>
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Koya&#39;s Blog"/>
+
+    <!--Page Cover-->
+    
+        <meta property="og:image" content=""/>
+    
+
+    <!-- Title -->
+    
+    <title>解决移动端fixed输入框问题 - Koya&#39;s Blog</title>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/sass/main.css">
+
+
+    <!--[if lt IE 8]>
+        
+<script src="/js/ie/html5shiv.js"></script>
+
+    <![endif]-->
+
+    <!--[if lt IE 8]>
+        
+<link rel="stylesheet" href="/sass/ie8.css">
+
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+        
+<link rel="stylesheet" href="/sass/ie9.css">
+
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="https://cdn.bootcss.com/featherlight/1.4.0/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-90536291-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+
+
+    <!-- la Analytics -->
+    
+    <script>
+        !function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"JHRJXYlwhd65yctP",ck:"JHRJXYlwhd65yctP"});
+    </script>
+
+
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Koya's Blog" type="application/atom+xml">
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <!-- Menu -->
+        <!-- Header -->
+<header id="header">
+    <div class="inner">
+
+        <!-- Logo -->
+        <a href="/" class="logo">
+            <span class="symbol"><img src="/images/logo.svg" alt="" /></span><span class="title">Koya's Blog</span>
+        </a>
+
+        <!-- Nav -->
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+    <h2>Menu</h2>
+    <ul>
+        
+            <li>
+                <a href="/">Home</a>
+            </li>
+        
+            <li>
+                <a href="/archives">Archives</a>
+            </li>
+        
+            <li>
+                <a href="/about">About</a>
+            </li>
+        
+            <li>
+                <a href="/tags">Tags</a>
+            </li>
+        
+    </ul>
+</nav>
+
+
+        <div id="main">
+            <div class="inner">
+
+                <!-- Main Content -->
+                
+
+    <h1 class="title">解决移动端fixed输入框问题</h1>
+    <div class="meta">
+        <div class="date">2018-10-31</div>
+        
+        <div class="post-meta-divider">|</div>
+        <div id="/mobile-input-fixed/" class="leancloud-visitors" data-flag-title="解决移动端fixed输入框问题">
+            <em class="post-meta-item-text">阅读量: </em>
+            <i class="leancloud-visitors-count"></i>
+        </div>
+        
+    </div>
+
+
+
+    <span class="image main"><img src="https://m-staticcdn.annatarhe.com//blog/5bd989771fbb5.jpg" alt="" /></span>
+
+
+<hr />
+
+<!-- Gallery -->
+
+
+<!-- Content -->
+<p>最近做的一个需求加入了输入发送信息的功能，设计给到的设计稿上需要实现一版fixed输入框，众所周知，在PC上这样的需求很容易就可以实现，但是在手机上因为软键盘弹出的问题，不管是在iOS或者是在Android上，都会有各种严重问题，比如说：软键盘遮挡到输入框引起的显示问题等</p>
+<p>随后开始了尝试解决</p>
+<p>第一步：<br>修改定位，因为移动端对fixed定位的元素实现的问题，首先尝试修改布局，修改fixed输入框为absolute，检查页面上有使用transform的地方，去除</p>
+<p>初步尝试，iOS除了X第一次点击打开时都恢复正常，但是安卓不正常，尝试失败</p>
+<p>继续修改：<br>基于第一步的基础上，给输入框增加一些事件，在输入框获取焦点的时候，刷新输入框的问题，具体：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">&#x27;input&#x27;</span>).scrollIntoView(<span class="literal">true</span>);</span><br></pre></td></tr></table></figure>
+
+<p>这样真机测试正常</p>
+<p>随后切换输入法，发现位置又开始错乱，遮挡住输入框的问题重新出现，更改代码：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">clearInterval</span>(<span class="built_in">this</span>.resizeInputInterval);</span><br><span class="line"><span class="built_in">this</span>.resizeInputInterval = <span class="built_in">setInterval</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">this</span>.input.scrollIntoView(<span class="literal">true</span>);</span><br><span class="line">&#125;, <span class="number">100</span>);</span><br></pre></td></tr></table></figure>
+
+<p>设置一个定时器在输入框获取焦点的时候一直刷新输入框的位置，然后在失去焦点的时候清除</p>
+<p>重新测试，大部分手机恢复正常，只有安卓5.x手机会在第一次获取焦点的时候输入法遮挡住输入框，再次获取焦点恢复正常</p>
+<p>总结一下</p>
+<p>1、fixed输入框最好基于absolute定位<br>2、获取焦点时需要定时刷新输入框的位置，防止webview计算失误导致输入框被遮挡</p>
+
+
+<!-- Tags -->
+
+
+
+<div class="tags">
+    <a href="/tags/mobile/" class="button small">mobile</a> <a href="/tags/input/" class="button small">input</a> <a href="/tags/scroll/" class="button small">scroll</a> <a href="/tags/bug-fix/" class="button small">bug fix</a> <a href="/tags/移动端输入框/" class="button small">移动端输入框</a>
+</div>
+
+
+
+<!-- Comments -->
+<div>
+    
+
+
+
+
+
+    <hr />
+    <div id="vcomments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine@latest/dist/Valine.min.js'></script>
+    <script>
+    new Valine({
+        el: '#vcomments' ,
+        appId: 'VDJQPQkWcae55MrsKrmNSw5j-gzGzoHsz',
+        appKey: 'n2xrQtPGJXzsR9rRdkB2nlPy',
+        notify:false, 
+        verify:false,
+        visitor: 'true',
+        avatar:'SS', 
+        placeholder: '评论点什么吧~' 
+    });
+    </script>
+
+</div>
+
+
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+<footer id="footer">
+    <div class="inner">
+        <section>
+            <h2>About</h2>
+            <div>
+                工作在<a href="https://www.liulishuo.com/" target="_blank">流利说</a>，前端打杂，了解请至 <a href="/about" target="_blank">关于我</a>
+            </div>
+        </section>
+        <section>
+            <h2>Follow</h2>
+            <ul class="icons">
+                
+                
+                
+                    <li><a href="https://www.instagram.com/koya.site/" class="icon style2 fa-instagram" target="_blank" ><span class="label">Instagram</span></a></li>
+                
+                
+                
+                    <li><a href="https://github.com/virgoone" class="icon style2 fa-github" target="_blank" ><span class="label">GitHub</span></a></li>
+                
+                
+                
+                
+                
+                    <li><a href="mailto:me@virgo.one" class="icon style2 fa-envelope-o" target="_blank" ><span class="label">Email</span></a></li>
+                
+                
+                    <li><a href="https://blog.marryto.me/atom.xml" class="icon style2 fa-rss" target="_blank" ><span class="label">RSS</span></a></li>
+                
+            </ul>
+        </section>
+        <ul class="copyright">
+            <li>&copy; Untitled. All rights reserved</li>
+            <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+            <li>Hexo: <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></li>
+            <li>Hosted by <a href="http://t.douni.one/zeit" target="_blank">ZEIT</a></li>
+        </ul>
+    </div>
+</footer>
+    </div>
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<!-- skel -->
+<script src="https://cdn.bootcss.com/skel/3.0.0/skel.min.js" type="text/javascript" charset="utf-8"></script>
+<!-- Custom Code -->
+
+<script src="/js/util.js"></script>
+
+
+<!--[if lte IE 8]>
+
+<script src="/js/ie/respond.min.js"></script>
+
+<![endif]-->
+
+<!-- Custom Code -->
+
+<script src="/js/main.js"></script>
+
+
+<!-- Gallery -->
+<script src="https://cdn.bootcss.com/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+</body>
+
+</html>

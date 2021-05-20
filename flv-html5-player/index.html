@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="referrer" content="origin"> 
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Description-->
+    
+        <meta name="description" content="前端开发，DJI爱好者，入坑Mavic，工作在上海">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Koya">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="使用flvjs封装html5 video player"/>
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Koya&#39;s Blog"/>
+
+    <!--Page Cover-->
+    
+        <meta property="og:image" content=""/>
+    
+
+    <!-- Title -->
+    
+    <title>使用flvjs封装html5 video player - Koya&#39;s Blog</title>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/sass/main.css">
+
+
+    <!--[if lt IE 8]>
+        
+<script src="/js/ie/html5shiv.js"></script>
+
+    <![endif]-->
+
+    <!--[if lt IE 8]>
+        
+<link rel="stylesheet" href="/sass/ie8.css">
+
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+        
+<link rel="stylesheet" href="/sass/ie9.css">
+
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="https://cdn.bootcss.com/featherlight/1.4.0/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-90536291-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+
+
+    <!-- la Analytics -->
+    
+    <script>
+        !function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"JHRJXYlwhd65yctP",ck:"JHRJXYlwhd65yctP"});
+    </script>
+
+
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Koya's Blog" type="application/atom+xml">
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <!-- Menu -->
+        <!-- Header -->
+<header id="header">
+    <div class="inner">
+
+        <!-- Logo -->
+        <a href="/" class="logo">
+            <span class="symbol"><img src="/images/logo.svg" alt="" /></span><span class="title">Koya's Blog</span>
+        </a>
+
+        <!-- Nav -->
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+    <h2>Menu</h2>
+    <ul>
+        
+            <li>
+                <a href="/">Home</a>
+            </li>
+        
+            <li>
+                <a href="/archives">Archives</a>
+            </li>
+        
+            <li>
+                <a href="/about">About</a>
+            </li>
+        
+            <li>
+                <a href="/tags">Tags</a>
+            </li>
+        
+    </ul>
+</nav>
+
+
+        <div id="main">
+            <div class="inner">
+
+                <!-- Main Content -->
+                
+
+    <h1 class="title">使用flvjs封装html5 video player</h1>
+    <div class="meta">
+        <div class="date">2017-04-13</div>
+        
+        <div class="post-meta-divider">|</div>
+        <div id="/flv-html5-player/" class="leancloud-visitors" data-flag-title="使用flvjs封装html5 video player">
+            <em class="post-meta-item-text">阅读量: </em>
+            <i class="leancloud-visitors-count"></i>
+        </div>
+        
+    </div>
+
+
+
+    <span class="image main"><img src="https://m-staticcdn.annatarhe.com//blog/5b1a7ecd5b4e1.jpg" alt="" /></span>
+
+
+<hr />
+
+<!-- Gallery -->
+
+
+<!-- Content -->
+<p>最近一直在公司里做视频分析系统相关的工作，碰到一个需求</p>
+<p>因为系统中原来使用的播放器是我们公司包含互动层在内的一个比较庞大的播放器</p>
+<p>而对于我们目前的系统来说并不需要，所以我就按照<a target="_blank" rel="noopener" href="https://github.com/Selz/plyr/">plyr</a>的思路整合了一个只包含简单功能的播放器</p>
+<p>系统中有flv格式的播放需求，所以在综合考虑之后决定使用b站的<a target="_blank" rel="noopener" href="https://github.com/Bilibili/flv.js">flvjs</a>做层封装，让h5直接可以播放flv格式的视频</p>
+<p>最后代码开源在[GitHub]:<a target="_blank" rel="noopener" href="https://github.com/virgoone/vplyr">https://github.com/virgoone/vplyr</a></p>
+<p>播放器演示：<a target="_blank" rel="noopener" href="http://vplyr.marryto.me/">http://vplyr.marryto.me/</a></p>
+<p>实现思路是在创建html5播放器的时候判断src，如果是flv，使用flvjs封装一下video media</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">__createFlvjs</span>(<span class="params">src</span>)</span> &#123;</span><br><span class="line">  <span class="keyword">const</span> sourceConfig = &#123;</span><br><span class="line">    <span class="attr">isLive</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">type</span>: <span class="string">&#x27;flv&#x27;</span>,</span><br><span class="line">    <span class="attr">url</span>: src</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">const</span> playerConfig = &#123;</span><br><span class="line">    <span class="attr">enableWorker</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">deferLoadAfterSourceOpen</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">stashInitialSize</span>: <span class="number">512</span> * <span class="number">1024</span>,</span><br><span class="line">    <span class="attr">enableStashBuffer</span>: <span class="literal">true</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">const</span> player = flvjs.createPlayer(sourceConfig, playerConfig)</span><br><span class="line">  player.on(flvjs.Events.ERROR, <span class="function"><span class="keyword">function</span> (<span class="params">e, t</span>) </span>&#123;</span><br><span class="line">    player.unload()</span><br><span class="line">  &#125;)</span><br><span class="line">  player.on(flvjs.Events.STATISTICS_INFO, <span class="function"><span class="params">e</span> =&gt;</span> Log.i(<span class="built_in">this</span>.TAG, <span class="built_in">parseInt</span>(e.speed * <span class="number">10</span>) / <span class="number">10</span> + <span class="string">&#x27;KB/s&#x27;</span>))</span><br><span class="line"></span><br><span class="line">  player.attachMediaElement(<span class="built_in">this</span>.media)</span><br><span class="line">  player.load()</span><br><span class="line">  <span class="keyword">return</span> player</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这样播放视频的时候flv格式的视频已经是被flvjs转码过的被浏览器支持的视频格式了</p>
+
+
+<!-- Tags -->
+
+
+
+<div class="tags">
+    <a href="/tags/video/" class="button small">video</a> <a href="/tags/flvjs/" class="button small">flvjs</a> <a href="/tags/html5/" class="button small">html5</a> <a href="/tags/mse/" class="button small">mse</a>
+</div>
+
+
+
+<!-- Comments -->
+<div>
+    
+
+
+
+
+
+    <hr />
+    <div id="vcomments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine@latest/dist/Valine.min.js'></script>
+    <script>
+    new Valine({
+        el: '#vcomments' ,
+        appId: 'VDJQPQkWcae55MrsKrmNSw5j-gzGzoHsz',
+        appKey: 'n2xrQtPGJXzsR9rRdkB2nlPy',
+        notify:false, 
+        verify:false,
+        visitor: 'true',
+        avatar:'SS', 
+        placeholder: '评论点什么吧~' 
+    });
+    </script>
+
+</div>
+
+
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+<footer id="footer">
+    <div class="inner">
+        <section>
+            <h2>About</h2>
+            <div>
+                工作在<a href="https://www.liulishuo.com/" target="_blank">流利说</a>，前端打杂，了解请至 <a href="/about" target="_blank">关于我</a>
+            </div>
+        </section>
+        <section>
+            <h2>Follow</h2>
+            <ul class="icons">
+                
+                
+                
+                    <li><a href="https://www.instagram.com/koya.site/" class="icon style2 fa-instagram" target="_blank" ><span class="label">Instagram</span></a></li>
+                
+                
+                
+                    <li><a href="https://github.com/virgoone" class="icon style2 fa-github" target="_blank" ><span class="label">GitHub</span></a></li>
+                
+                
+                
+                
+                
+                    <li><a href="mailto:me@virgo.one" class="icon style2 fa-envelope-o" target="_blank" ><span class="label">Email</span></a></li>
+                
+                
+                    <li><a href="https://blog.marryto.me/atom.xml" class="icon style2 fa-rss" target="_blank" ><span class="label">RSS</span></a></li>
+                
+            </ul>
+        </section>
+        <ul class="copyright">
+            <li>&copy; Untitled. All rights reserved</li>
+            <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+            <li>Hexo: <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></li>
+            <li>Hosted by <a href="http://t.douni.one/zeit" target="_blank">ZEIT</a></li>
+        </ul>
+    </div>
+</footer>
+    </div>
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<!-- skel -->
+<script src="https://cdn.bootcss.com/skel/3.0.0/skel.min.js" type="text/javascript" charset="utf-8"></script>
+<!-- Custom Code -->
+
+<script src="/js/util.js"></script>
+
+
+<!--[if lte IE 8]>
+
+<script src="/js/ie/respond.min.js"></script>
+
+<![endif]-->
+
+<!-- Custom Code -->
+
+<script src="/js/main.js"></script>
+
+
+<!-- Gallery -->
+<script src="https://cdn.bootcss.com/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+</body>
+
+</html>

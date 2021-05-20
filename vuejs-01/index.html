@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="referrer" content="origin"> 
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Description-->
+    
+        <meta name="description" content="前端开发，DJI爱好者，入坑Mavic，工作在上海">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Koya">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="使用vue2.0开发的开眼h5实现"/>
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Koya&#39;s Blog"/>
+
+    <!--Page Cover-->
+    
+        <meta property="og:image" content=""/>
+    
+
+    <!-- Title -->
+    
+    <title>使用vue2.0开发的开眼h5实现 - Koya&#39;s Blog</title>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/sass/main.css">
+
+
+    <!--[if lt IE 8]>
+        
+<script src="/js/ie/html5shiv.js"></script>
+
+    <![endif]-->
+
+    <!--[if lt IE 8]>
+        
+<link rel="stylesheet" href="/sass/ie8.css">
+
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+        
+<link rel="stylesheet" href="/sass/ie9.css">
+
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="https://cdn.bootcss.com/featherlight/1.4.0/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-90536291-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+
+
+    <!-- la Analytics -->
+    
+    <script>
+        !function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"JHRJXYlwhd65yctP",ck:"JHRJXYlwhd65yctP"});
+    </script>
+
+
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Koya's Blog" type="application/atom+xml">
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <!-- Menu -->
+        <!-- Header -->
+<header id="header">
+    <div class="inner">
+
+        <!-- Logo -->
+        <a href="/" class="logo">
+            <span class="symbol"><img src="/images/logo.svg" alt="" /></span><span class="title">Koya's Blog</span>
+        </a>
+
+        <!-- Nav -->
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+    <h2>Menu</h2>
+    <ul>
+        
+            <li>
+                <a href="/">Home</a>
+            </li>
+        
+            <li>
+                <a href="/archives">Archives</a>
+            </li>
+        
+            <li>
+                <a href="/about">About</a>
+            </li>
+        
+            <li>
+                <a href="/tags">Tags</a>
+            </li>
+        
+    </ul>
+</nav>
+
+
+        <div id="main">
+            <div class="inner">
+
+                <!-- Main Content -->
+                
+
+    <h1 class="title">使用vue2.0开发的开眼h5实现</h1>
+    <div class="meta">
+        <div class="date">2017-02-28</div>
+        
+        <div class="post-meta-divider">|</div>
+        <div id="/vuejs-01/" class="leancloud-visitors" data-flag-title="使用vue2.0开发的开眼h5实现">
+            <em class="post-meta-item-text">阅读量: </em>
+            <i class="leancloud-visitors-count"></i>
+        </div>
+        
+    </div>
+
+
+
+    <span class="image main"><img src="https://m-staticcdn.annatarhe.com//blog/poster/5b1a7ecd88810.jpg" alt="" /></span>
+
+
+<hr />
+
+<!-- Gallery -->
+
+
+<!-- Content -->
+<p>最近一直在学习vuejs，手痒之余决定使用vuejs做一些东西</p>
+<p>正好一直觉得开眼APP的风格很惹人喜欢，所以决定用vuejs仿写一个简单的h5的开眼实现</p>
+<p>项目演示：<a target="_blank" rel="noopener" href="http://douni.one/eyepetizer">http://douni.one/eyepetizer</a></p>
+<h2 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h2><ul>
+<li>视频列表</li>
+<li>视频详情 ✅</li>
+</ul>
+<h2 id="项目构建"><a href="#项目构建" class="headerlink" title="项目构建"></a>项目构建</h2><p>首先全局安装<a target="_blank" rel="noopener" href="https://github.com/vuejs/vue-cli">vue-cli</a>，几个简单的步骤就可以帮助你快速构建一个vue项目。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g vue-cli</span><br></pre></td></tr></table></figure>
+
+<p>然后，利用vue-cli构建一个vue项目，并安装项目依赖</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vue init webpack eyepetizer</span><br><span class="line"><span class="built_in">cd</span> eyepetizer &amp; npm install</span><br></pre></td></tr></table></figure>
+
+<p>生成修改后的项目文件如下</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">├── build //webpack基本配置文件</span><br><span class="line">├── config //配置文件相关</span><br><span class="line">├── dist //build生成后的文件相关</span><br><span class="line">│</span><br><span class="line">├── src</span><br><span class="line">│   ├── assets //项目使用scss资源</span><br><span class="line">│   │   └── scss</span><br><span class="line">│   ├── components //组件相关</span><br><span class="line">│   ├── lib //api或其他需要引用的lib</span><br><span class="line">│   ├── router //router相关</span><br><span class="line">│   └── store //vuex store相关</span><br><span class="line">│</span><br><span class="line">├── static //项目静态文件</span><br><span class="line">└── test //测试文件</span><br></pre></td></tr></table></figure>
+
+<h2 id="项目配置与开发"><a href="#项目配置与开发" class="headerlink" title="项目配置与开发"></a>项目配置与开发</h2><p>项目中使用了sass vue-router vuex querystring等库，先安装相关依赖包</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install sass-loader vuex style-loader node-sass moment css-loader axios file-loader querystring vue-router --save-dev</span><br></pre></td></tr></table></figure>
+
+<p>然后在基本页面实现并配置相关路由：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">import Vue from &#x27;vue&#x27;;</span><br><span class="line">import Router from &#x27;vue-router&#x27;;</span><br><span class="line"></span><br><span class="line">import Hello from &#x27;components/Hello&#x27;;</span><br><span class="line">import Detail from &#x27;components/Detail&#x27;;</span><br><span class="line"></span><br><span class="line">Vue.use(Router);</span><br><span class="line"></span><br><span class="line">export default new Router(&#123;</span><br><span class="line">  scrollBehavior: () =&gt; (&#123; y: 0 &#125;),</span><br><span class="line">  routes: [</span><br><span class="line">    &#123;</span><br><span class="line">      path: &#x27;/&#x27;,</span><br><span class="line">      name: &#x27;Hello&#x27;,</span><br><span class="line">      component: Hello,</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">      path: &#x27;/detail/:vid&#x27;,</span><br><span class="line">      name: &#x27;Detail&#x27;,</span><br><span class="line">      component: Detail,</span><br><span class="line">    &#125;,</span><br><span class="line">  ],</span><br><span class="line">&#125;);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>其中hello为页面首页，最终会实现为视频列表页面，目前先说视频详情页面：</p>
+<p>API：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 获取视频详情</span></span><br><span class="line">http://baobab.wandoujia.com/api/v1/video/14416</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取关联视频</span></span><br><span class="line">http://baobab.wandoujia.com/api/v1/video/related/14416?num=5</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取当前视频评论</span></span><br><span class="line">http://baobab.wandoujia.com/api/v1/replies/video?id=14416&amp;num=5</span><br></pre></td></tr></table></figure>
+
+<p>Store：<br>主要包含：state、action、getters、mutations<br>在组件method中通过触发dispatch来修改state</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">fetchData() &#123;</span><br><span class="line">  const VID = this.$route.params.vid;</span><br><span class="line">  if (!VID) &#123;</span><br><span class="line">    this.$router.go(&#x27;/&#x27;);</span><br><span class="line">  &#125;</span><br><span class="line">  this.$store.dispatch(&#x27;getVideoInfo&#x27;, &#123; VID &#125;);</span><br><span class="line">  this.$store.dispatch(&#x27;getRelateVideoList&#x27;, &#123; VID &#125;);</span><br><span class="line">  this.$store.dispatch(&#x27;getRepliesVideoList&#x27;, &#123; VID &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>将state中的对象通过mapGetters映射给自定义变量：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">computed:&#123;</span><br><span class="line">  ...mapGetters(&#123;</span><br><span class="line">    video: &#x27;videoInfo&#x27;,</span><br><span class="line">    videoList: &#x27;relateList&#x27;,</span><br><span class="line">    replyList: &#x27;repliesList&#x27;,</span><br><span class="line">  &#125;),</span><br><span class="line">  v() &#123;</span><br><span class="line">    /* eslint-disable */</span><br><span class="line">    const _v = this.video;</span><br><span class="line">    return &#123;</span><br><span class="line">      title: _v.title,</span><br><span class="line">      desc: _v.description,</span><br><span class="line">      cat: _v.category,</span><br><span class="line">      tags: _v.tags,</span><br><span class="line">      url: _v.playUrl,</span><br><span class="line">      time: _v.time,</span><br><span class="line">      cover: &#123;</span><br><span class="line">        backgroundImage: `url($&#123;_v.coverForDetail&#125;)`,</span><br><span class="line">      &#125;,</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>然后在组件中调用：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;vue-meta-positioner&quot;&gt;</span><br><span class="line">  &lt;div class=&quot;video-meta&quot;&gt;</span><br><span class="line">    &lt;h1&gt;&#123;&#123;v.title&#125;&#125;&lt;/h1&gt;</span><br><span class="line">    &lt;div class=&quot;divider divider-short&quot;&gt;&lt;/div&gt;</span><br><span class="line">    &lt;p&gt;&#123;&#123;v.cat&#125;&#125; / &#123;&#123;v.time&#125;&#125;&lt;/p&gt;</span><br><span class="line">    &lt;p class=&quot;desciption&quot;&gt;</span><br><span class="line">      &#123;&#123;v.desc&#125;&#125;</span><br><span class="line">    &lt;/p&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<p>最终效果：<br><img src="https://m-staticcdn.annatarhe.com//blog/x7t0ay6xbb.png" alt="Douni.one"></p>
+<h2 id="部署项目"><a href="#部署项目" class="headerlink" title="部署项目"></a>部署项目</h2><p>执行命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run build</span><br></pre></td></tr></table></figure>
+
+<p>然后会生成一个dist文件夹，该文件夹中就是我们可以用来发布的代码</p>
+<p>我将生成的项目部署到了GitHub pages和coding pages，其中国内解析走coding，而国外解析会解析到GitHub</p>
+<p>具体项目演示地址：<a target="_blank" rel="noopener" href="http://douni.one/eyepetizer">http://douni.one/eyepetizer</a></p>
+<p>项目源码地址：<br>Github源码: <a target="_blank" rel="noopener" href="https://github.com/virgoone/eyepetizer/">https://github.com/virgoone/eyepetizer/</a><br>Coding源码: <a target="_blank" rel="noopener" href="https://coding.net/u/koyasite/p/eyepetizer/">https://coding.net/u/koyasite/p/eyepetizer/</a></p>
+<p>～未完待续</p>
+
+
+<!-- Tags -->
+
+
+
+<div class="tags">
+    <a href="/tags/前端/" class="button small">前端</a> <a href="/tags/2017/" class="button small">2017</a> <a href="/tags/vuejs/" class="button small">vuejs</a> <a href="/tags/eyepetizer/" class="button small">eyepetizer</a>
+</div>
+
+
+
+<!-- Comments -->
+<div>
+    
+
+
+
+
+
+    <hr />
+    <div id="vcomments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine@latest/dist/Valine.min.js'></script>
+    <script>
+    new Valine({
+        el: '#vcomments' ,
+        appId: 'VDJQPQkWcae55MrsKrmNSw5j-gzGzoHsz',
+        appKey: 'n2xrQtPGJXzsR9rRdkB2nlPy',
+        notify:false, 
+        verify:false,
+        visitor: 'true',
+        avatar:'SS', 
+        placeholder: '评论点什么吧~' 
+    });
+    </script>
+
+</div>
+
+
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+<footer id="footer">
+    <div class="inner">
+        <section>
+            <h2>About</h2>
+            <div>
+                工作在<a href="https://www.liulishuo.com/" target="_blank">流利说</a>，前端打杂，了解请至 <a href="/about" target="_blank">关于我</a>
+            </div>
+        </section>
+        <section>
+            <h2>Follow</h2>
+            <ul class="icons">
+                
+                
+                
+                    <li><a href="https://www.instagram.com/koya.site/" class="icon style2 fa-instagram" target="_blank" ><span class="label">Instagram</span></a></li>
+                
+                
+                
+                    <li><a href="https://github.com/virgoone" class="icon style2 fa-github" target="_blank" ><span class="label">GitHub</span></a></li>
+                
+                
+                
+                
+                
+                    <li><a href="mailto:me@virgo.one" class="icon style2 fa-envelope-o" target="_blank" ><span class="label">Email</span></a></li>
+                
+                
+                    <li><a href="https://blog.marryto.me/atom.xml" class="icon style2 fa-rss" target="_blank" ><span class="label">RSS</span></a></li>
+                
+            </ul>
+        </section>
+        <ul class="copyright">
+            <li>&copy; Untitled. All rights reserved</li>
+            <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+            <li>Hexo: <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></li>
+            <li>Hosted by <a href="http://t.douni.one/zeit" target="_blank">ZEIT</a></li>
+        </ul>
+    </div>
+</footer>
+    </div>
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<!-- skel -->
+<script src="https://cdn.bootcss.com/skel/3.0.0/skel.min.js" type="text/javascript" charset="utf-8"></script>
+<!-- Custom Code -->
+
+<script src="/js/util.js"></script>
+
+
+<!--[if lte IE 8]>
+
+<script src="/js/ie/respond.min.js"></script>
+
+<![endif]-->
+
+<!-- Custom Code -->
+
+<script src="/js/main.js"></script>
+
+
+<!-- Gallery -->
+<script src="https://cdn.bootcss.com/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+</body>
+
+</html>
